@@ -1,0 +1,7 @@
+<h1>FB Post Search</h1>
+<%= form_for(@fb_search) do |f| %>
+  <%= f.label :keywords %>
+  <%= f.text_field :keywords %>
+
+  <%= f.submit "Search" %>
+<% end %>
