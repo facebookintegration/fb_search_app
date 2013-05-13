@@ -1,0 +1,14 @@
+<h1>Search Results: <%= @fb_search.keywords %></h1>
+<% fb = FacebookWrapper.new %>
+<% search = fb.search(@fb_search.keywords, "post") %>
+<table>
+  <tr>
+    <th>User</th><th>Post</th>
+  </tr>
+  <% search[:body]["data"].each do |post| %>
+    <tr>
+      <td><%= post["from"]["name"] %></td>
+      <td><%= post["message"] %></td>
+    </tr>
+  <% end %>
+</table>

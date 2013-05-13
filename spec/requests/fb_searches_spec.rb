@@ -19,6 +19,12 @@ describe "FbSearches" do
         expect { click_button "Search" }.not_to change(FbSearch, :count)
         page.should have_selector('h1', :content => 'FB Post Search')
       end
+
+      it "should accept a valid search" do
+        fill_in :keywords, :with => "squirrels"
+        expect { click_button "Search" }.to change(FbSearch, :count).by(1)
+        page.should have_selector('h1', :content => "Search Results: squirrels")
+      end
     end
   end
 end

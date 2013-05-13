@@ -13,6 +13,6 @@ class FbSearchesController < ApplicationController
   end
 
   def show
-
+    @fb_search = FbSearch.find(params[:id])
   end
 end
