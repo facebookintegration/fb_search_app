@@ -1,8 +1,15 @@
 <h1>FB Post Search</h1>
-<%= link_to "View recent searches", fb_searches_path %>
+<%= link_to "View recent searches", fb_searches_path %><br /><br />
 <%= form_for(@fb_search) do |f| %>
-  <%= f.label :keywords %>
-  <%= f.text_field :keywords %>
+  <%= f.label :keywords %><br />
+  <% if @fb_search.errors.any? %>
+    <ul>
+      <% @fb_search.errors.full_messages.each do |msg| %>
+        <li class="error"><%= msg %></li>
+      <% end %>
+    </ul>
+  <% end %>
+  <%= f.text_field :keywords %><br />
 
   <%= f.submit "Search" %>
 <% end %>

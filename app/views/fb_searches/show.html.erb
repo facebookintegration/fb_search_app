@@ -1,5 +1,5 @@
 <h1>Search Results: <%= @fb_search.keywords %></h1>
-<%= link_to "Back to new search", root_path %>
+<%= link_to "Back to new search", root_path %><br /><br />
 <% fb = FacebookWrapper.new %>
 <% search = fb.search(@fb_search.keywords, "post") %>
 <table>
