@@ -13,3 +13,17 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+$(document).ready(function() {
+  $(".modal").hide();
+  $(".show_modal").click(function() {
+    event.preventDefault();
+    if ($(this).html() == "read more") {
+      $(this).html("show less");
+    }
+    else {
+      $(this).html("read more");
+    }
+    $(this).next().slideToggle("slow");
+  });
+});

@@ -1,4 +1,5 @@
 <h1>FB Post Search</h1>
+<%= link_to "View recent searches", fb_searches_path %>
 <%= form_for(@fb_search) do |f| %>
   <%= f.label :keywords %>
   <%= f.text_field :keywords %>
