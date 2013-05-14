@@ -24,4 +24,9 @@ class FbSearchesController < ApplicationController
   def index
     @fb_searches = FbSearch.all
   end
+
+  def destroy
+    FbSearch.find(params[:id]).destroy
+    redirect_to fb_searches_path
+  end
 end

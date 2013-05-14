@@ -61,5 +61,11 @@ describe "FbSearches" do
     it "should have a link back to new search" do
       page.should have_link('Back to new search', :href => new_fb_search_path)
     end
+
+    it "should provide a working delete link" do
+      page.should have_link('remove', :href => fb_search_path(@fb_search))
+      expect { click_link 'remove' }.to change(FbSearch, :count).by(-1)
+      current_path.should == fb_searches_path
+    end
   end
 end
