@@ -9,13 +9,16 @@
   <% search[:body]["data"].each do |post| %>
     <% if post["message"] %>
       <tr>
-        <td><%= post["from"]["name"] %></td>
+        <td>
+          <%= post["from"]["name"] %>
+          <img src="<%= FacebookWrapper.new.profile_pic(post["from"]["id"])["data"]["url"] %>" />
+        </td>
         <td>
           <% if post["message"].length <= 150 %>
             <%= post["message"] %>
           <% else %>
             <%= post["message"][0...150] %>...
-            <%= link_to "read more", "#", :class => "show_modal" %>
+            <%= link_to "read more", "", :class => "show_modal" %>
             <div class="modal"><%= post["message"] %></div>
           <% end %>
         </td>
