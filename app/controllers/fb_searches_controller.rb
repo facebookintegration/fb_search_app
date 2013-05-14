@@ -15,4 +15,8 @@ class FbSearchesController < ApplicationController
   def show
     @fb_search = FbSearch.find(params[:id])
   end
+
+  def index
+    @fb_searches = FbSearch.all
+  end
 end

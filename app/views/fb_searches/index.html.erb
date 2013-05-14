@@ -1,0 +1,7 @@
+<h1>Recent Searches</h1>
+<%= link_to 'Back to new search', new_fb_search_path %>
+<ul>
+  <% @fb_searches.each do |search| %>
+    <li><%= link_to search.keywords, fb_search_path(search) %></li>
+  <% end %>
+</ul>

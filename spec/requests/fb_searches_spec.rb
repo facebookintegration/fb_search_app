@@ -40,4 +40,20 @@ describe "FbSearches" do
       page.should have_link('Back to new search', :href => root_path)
     end
   end
+
+  describe "going to recent searches" do
+    before { visit fb_searches_path }
+
+    it "should have a list of links to recent searches" do
+      page.should have_link('llama', :href => fb_search_path(@fb_search));
+    end
+
+    it "should have the correct heading" do
+      page.should have_selector('h1', :content => 'Recent Searches')
+    end
+
+    it "should have a link back to new search" do
+      page.should have_link('Back to new search', :href => new_fb_search_path)
+    end
+  end
 end
