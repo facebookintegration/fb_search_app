@@ -18,34 +18,51 @@ class FacebookWrapper
     @conn = Connection.new.create("https://graph.facebook.com")
     @options = options
   end
+end
 
-  def me()
-    @conn.get("/me", @options).body
+class Me < FacebookWrapper
+  def initialize(options = {})
+    super(options)
   end
 
-  def profile_pic(username = nil)
-    username ||= me.username
-    @conn.get("/#{username}/picture?redirect=false", @options).body
+  def me
+    @conn.get("/me", @options).body
+  end
+end
+
+class Searcher < FacebookWrapper
+  def intitialize(options = {})
+    super(options)
   end
 
   def search(query, type)
     @conn.get("/search?q=#{query}&type=#{type}", @options).env
   end
 
-  def extract_messages(search)
-    result = ""
-    search[:body]["data"].each do |post|
-      result << "#{post["from"]["name"]} says: #{post["message"]}\n"
-      result << "-" * 20 << "\n"
-    end
-    result
+  def search_data(query, type)
+    search(query, type)[:body]["data"]
+  end
+end
+
+class User < FacebookWrapper
+  attr_reader :id, :name
+
+  def initialize(id, name, options = {})
+    super(options)
+    @id = id
+    @name = name
   end
 
-  def extract_messages_html(search)
-    html = "<ul>"
-    search[:body]["data"].each do |post|
-      html << "<li>#{post["from"]["name"]} says: #{post["message"]}</li>"
-    end
-    html << "</ul>"
+  def profile_pic_url
+    @conn.get("/#{id}/picture?redirect=false", @options).body["data"]["url"]
+  end
+end
+
+class Post
+  attr_reader :author, :message
+
+  def initialize(post)
+    @author = User.new(post["from"]["id"], post["from"]["name"])
+    @message = post["message"]
   end
 end

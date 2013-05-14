@@ -1,26 +1,26 @@
 <h1>Search Results: <%= @fb_search.keywords %></h1>
 <%= link_to "Back to new search", root_path %><br /><br />
-<% fb = FacebookWrapper.new %>
-<% search = fb.search(@fb_search.keywords, "post") %>
+<% searcher = FacebookWrapper::Searcher.new %>
+<% posts = searcher.search_data(@fb_search.keywords, "post") %>
 <table>
   <tr>
     <th>User</th><th>Post</th>
   </tr>
-  <% search[:body]["data"].each do |post| %>
-    <% if post["message"] %>
+  <% posts.each do |data| %>
+    <% post = Post.new(data) %>
+    <% if post.message %>
       <tr>
         <td class="fixed">
-          <img src="<%= fb.profile_pic(post["from"]["id"])["data"]["url"] %>" />
-          <%= post["from"]["name"] %>
+          <img src="<%= post.author.profile_pic_url %>" />
+          <%= post.author.name %>
         </td>
         <td>
-          <% #output = post["message"].split(@fb_search.keywords).join("<b>#{@fb_search.keywords}</b>") %>
-          <% if post["message"].length <= 150 %>
-            <%= post["message"] %>
+          <% if post.message.length <= 150 %>
+            <%= post.message %>
           <% else %>
-            <%= post["message"][0..150] %>...
+            <%= post.message[0..150] %>...
             <%= link_to "read more", "", :class => "show_modal" %>
-            <div class="modal"><%= post["message"] %></div>
+            <div class="modal"><%= post.message %></div>
           <% end %>
         </td>
       </tr>
