@@ -4,7 +4,7 @@ class FbSearchesController < ApplicationController
   end
 
   def create
-    @fb_search = FbSearch.find_by_keywords(params[:keywords])
+    @fb_search = FbSearch.find_by_keywords(params[:fb_search][:keywords])
     if @fb_search
       redirect_to fb_search_path(@fb_search)
     else

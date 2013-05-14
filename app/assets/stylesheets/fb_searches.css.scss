@@ -8,6 +8,7 @@ body {
 
 table {
   border-collapse: collapse;
+  width: 100%;
   td, th {
     padding: 1em;
     border: 0.1em solid black;
@@ -15,9 +16,18 @@ table {
   th {
     background-color: gray;
   }
+  td.fixed {
+    width: 20em;
+    img {
+      float: left;
+      margin-right: 1em;
+    }
+  }
   .modal {
-    box-shadow: 2em 2em 2em black;
-    background-color: gray;
+    box-shadow: 1em 1em 1em gray;
+    background-color: lightblue;
+    border-radius: 1em;
+    padding: 1em;
   }
 }
 

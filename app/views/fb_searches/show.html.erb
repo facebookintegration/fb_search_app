@@ -9,9 +9,9 @@
   <% search[:body]["data"].each do |post| %>
     <% if post["message"] %>
       <tr>
-        <td>
-          <%= post["from"]["name"] %>
+        <td class="fixed">
           <img src="<%= FacebookWrapper.new.profile_pic(post["from"]["id"])["data"]["url"] %>" />
+          <%= post["from"]["name"] %>
         </td>
         <td>
           <% if post["message"].length <= 150 %>
