@@ -32,6 +32,11 @@ describe "FbSearches" do
         current_path.should == fb_search_path(@fb_search)
       end
 
+      it "should increment frequency of a repeated search" do
+        fill_in :keywords, :with => @fb_search.keywords
+        expect { click_button "Search" }.to change(@fb_search, :frequency).by(1)
+      end
+
       it "should accept a valid search" do
         fill_in :keywords, :with => "squirrels"
         expect { click_button "Search" }.to change(FbSearch, :count).by(1)
@@ -66,6 +71,10 @@ describe "FbSearches" do
       page.should have_link('remove', :href => fb_search_path(@fb_search))
       expect { click_link 'remove' }.to change(FbSearch, :count).by(-1)
       current_path.should == fb_searches_path
+    end
+
+    it "should list the frequency of each search" do
+      page.should have_content("(#{@fb_search.frequency})")
     end
   end
 end

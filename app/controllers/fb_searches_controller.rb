@@ -6,6 +6,7 @@ class FbSearchesController < ApplicationController
   def create
     @fb_search = FbSearch.find_by_keywords(params[:fb_search][:keywords])
     if @fb_search
+      @fb_search.increment!(:frequency)
       redirect_to fb_search_path(@fb_search)
     else
       @fb_search = FbSearch.new(params[:fb_search])
@@ -22,7 +23,7 @@ class FbSearchesController < ApplicationController
   end
 
   def index
-    @fb_searches = FbSearch.all
+    @fb_searches = FbSearch.order("frequency DESC").all
   end
 
   def destroy
