@@ -21,10 +21,6 @@ class FacebookWrapper
 end
 
 class Me < FacebookWrapper
-  def initialize(options = {})
-    super(options)
-  end
-
   def info
     @conn.get("/me", @options).body
   end
@@ -70,7 +66,12 @@ class FacebookObject
 end
 
 class Application < FacebookObject
+  attr_reader :namespace
 
+  def initialize(info)
+    super(info)
+    @namespace = info["namespace"]
+  end
 end
 
 class Event < FacebookObject
@@ -78,11 +79,21 @@ class Event < FacebookObject
 end
 
 class Group < FacebookObject
+  attr_reader :version
 
+  def initialize(info)
+    super(info)
+    @version = info["version"]
+  end
 end
 
 class Page < FacebookObject
+  attr_reader :category
 
+  def initialize(info)
+    super(info)
+    @category = info["category"]
+  end
 end
 
 class Person < FacebookObject

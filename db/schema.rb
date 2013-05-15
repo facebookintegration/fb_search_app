@@ -11,13 +11,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130514172704) do
+ActiveRecord::Schema.define(:version => 20130515170157) do
 
   create_table "fb_searches", :force => true do |t|
     t.string   "keywords"
     t.datetime "created_at",                :null => false
     t.datetime "updated_at",                :null => false
     t.integer  "frequency",  :default => 1
+    t.string   "type"
   end
 
 end

@@ -7,7 +7,7 @@ describe "FbSearches" do
     before { visit root_path }
 
     it "should have the correct title" do
-      page.should have_selector('h1', :content => 'FB Post Search')
+      page.should have_selector('h1', :content => 'Facebook Search')
     end
 
     it "should have the correct form elements" do
@@ -23,7 +23,7 @@ describe "FbSearches" do
       it "should not accept a blank search" do
         fill_in :keywords, :with => " "
         expect { click_button "Search" }.not_to change(FbSearch, :count)
-        page.should have_selector('h1', :content => 'FB Post Search')
+        page.should have_selector('h1', :content => 'Facebook Search')
       end
 
       it "should not add a repeated search to the database" do
