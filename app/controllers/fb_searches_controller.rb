@@ -4,17 +4,12 @@ class FbSearchesController < ApplicationController
   end
 
   def create
-    @fb_search = FbSearch.find_by_keywords(params[:fb_search][:keywords])
+    @fb_search = FbSearch.find_or_create_by_keywords(params[:fb_search][:keywords])
     if @fb_search
       @fb_search.increment!(:frequency)
       redirect_to fb_search_path(@fb_search)
     else
-      @fb_search = FbSearch.new(params[:fb_search])
-      if @fb_search.save
-        redirect_to fb_search_path(@fb_search)
-      else
-        render 'new'
-      end
+      render 'new'
     end
   end
 
