@@ -53,8 +53,17 @@ class User < FacebookWrapper
     @name = name
   end
 
-  def profile_pic_url
-    @conn.get("/#{id}/picture?redirect=false", @options).body["data"]["url"]
+  def profile_pic(width = 50, height = 50)
+    Picture.new(@id, width, height)
+  end
+end
+
+class Picture < FacebookWrapper
+  attr_reader :url
+
+  def initialize(id, width = 50, height = 50, options = {})
+    super(options)
+    @url = @conn.get("/#{id}/picture?redirect=false&width=#{width}&height=#{height}", @options).body["data"]["url"]
   end
 end
 
