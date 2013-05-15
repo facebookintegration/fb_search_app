@@ -25,53 +25,81 @@ class Me < FacebookWrapper
     super(options)
   end
 
-  def me
+  def info
     @conn.get("/me", @options).body
-  end
-end
-
-class Searcher < FacebookWrapper
-  def intitialize(options = {})
-    super(options)
-  end
-
-  def search(query, type)
-    @conn.get("/search?q=#{query}&type=#{type}", @options).env
-  end
-
-  def search_data(query, type)
-    search(query, type)[:body]["data"]
-  end
-end
-
-class User < FacebookWrapper
-  attr_reader :id, :name
-
-  def initialize(id, name, options = {})
-    super(options)
-    @id = id
-    @name = name
-  end
-
-  def profile_pic(width = 50, height = 50)
-    Picture.new(@id, width, height)
   end
 end
 
 class Picture < FacebookWrapper
   attr_reader :url
 
-  def initialize(id, width = 50, height = 50, options = {})
+  def initialize(id, width = 50, height = 50, url = nil, options = {})
     super(options)
-    @url = @conn.get("/#{id}/picture?redirect=false&width=#{width}&height=#{height}", @options).body["data"]["url"]
+    @url = url || @conn.get("/#{id}/picture?redirect=false&width=#{width}&height=#{height}", @options).body["data"]["url"]
   end
 end
 
-class Post
+class Search < FacebookWrapper
+  attr_accessor :type
+
+  def initialize(type, options = {})
+    super(options)
+    @type = type
+  end
+
+  def data(query)
+    find(query)[:body]["data"]
+  end
+
+  def find(query)
+    @conn.get("/search?q=#{query}&type=#{@type}", @options).env
+  end
+end
+
+class FacebookObject
+  attr_reader :id, :name
+
+  def initialize(info)
+    @id = info["id"]
+    @name = info["name"]
+  end
+
+  def picture(width = 50, height = 50)
+    Picture.new(@id, width, height)
+  end
+end
+
+class Application < FacebookObject
+
+end
+
+class Event < FacebookObject
+
+end
+
+class Group < FacebookObject
+
+end
+
+class Page < FacebookObject
+
+end
+
+class Person < FacebookObject
+
+end
+
+class Post < FacebookObject
   attr_reader :author, :message
 
   def initialize(post)
-    @author = User.new(post["from"]["id"], post["from"]["name"])
+    super("id" => post["id"], "name" => post["name"])
+    @author = Person.new(post["from"])
     @message = post["message"]
+    @picture_url = post["picture"]
+  end
+
+  def picture
+    @picture_url ? Picture.new("", nil, nil, @picture_url) : nil
   end
 end

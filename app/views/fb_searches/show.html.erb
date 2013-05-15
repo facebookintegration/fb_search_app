@@ -1,6 +1,6 @@
 <h1>Search Results: <%= @fb_search.keywords %></h1>
 <%= link_to "Back to new search", root_path %><br /><br />
-<% search = FacebookWrapper::Searcher.new.search_data(@fb_search.keywords, "post") %>
+<% search = FacebookWrapper::Search.new("post").data(@fb_search.keywords) %>
 <table>
   <tr>
     <th>User</th><th>Post</th>
@@ -9,17 +9,20 @@
     <% post = Post.new(data) %>
     <% if post.message %>
       <tr>
-        <td class="fixed">
-          <img src="<%= post.author.profile_pic.url %>" />
+        <td class="user">
+          <%= image_tag post.author.picture.url, :alt => post.author.name %>
           <%= post.author.name %>
         </td>
-        <td>
+        <td class="post">
           <% if post.message.length <= 150 %>
             <%= post.message %>
           <% else %>
             <%= post.message[0...150] %>...
             <%= link_to "read more", "", :class => "show_modal" %>
             <div class="modal"><%= post.message %></div>
+          <% end %>
+          <% if post.picture %>
+            <%= image_tag post.picture.url, :alt => "Photo for " << (post.name || "post") %>
           <% end %>
         </td>
       </tr>

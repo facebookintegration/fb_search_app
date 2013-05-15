@@ -16,11 +16,17 @@ table {
   th {
     background-color: gray;
   }
-  td.fixed {
+  td.user {
     width: 20em;
     img {
       float: left;
       margin-right: 1em;
+    }
+  }
+  td.post {
+    img {
+      float: right;
+      margin: 1em;
     }
   }
   .modal {
