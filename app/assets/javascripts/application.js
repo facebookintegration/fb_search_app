@@ -15,15 +15,15 @@
 //= require_tree .
 
 $(document).ready(function() {
-  $(".modal").hide();
-  $(".show_modal").click(function() {
+  $(document).on("click", ".show_modal", function(event) {
+    $this = $(this);
     event.preventDefault();
-    if ($(this).html() == "read more") {
-      $(this).html("show less");
+    if ($this.html() === "read more") {
+      $this.html("show less");
     }
     else {
-      $(this).html("read more");
+      $this.html("read more");
     }
-    $(this).next().slideToggle("slow");
+    $this.next().slideToggle("slow");
   });
 });
