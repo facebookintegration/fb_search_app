@@ -25,8 +25,9 @@ end
 
 group :test, :development do
   gem 'rspec-rails'
-  gem 'guard'
+  gem 'guard-rspec'
   gem 'capybara'
+  gem 'rb-fsevent'
 end
 
 gem 'jquery-rails'
@@ -44,4 +45,4 @@ gem 'jquery-rails'
 # gem 'capistrano'
 
 # To use debugger
-# gem 'debugger'
+gem 'debugger'
