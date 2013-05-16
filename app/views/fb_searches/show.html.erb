@@ -1,16 +1,14 @@
 <h1>Search Results: <%= @fb_search.keywords %></h1>
 <%= link_to "Back to new search", root_path %><br /><br />
-<% search = FacebookWrapper::Search.new("post").data(@fb_search.keywords) %>
 <table>
   <tr>
     <th>User</th><th>Post</th>
   </tr>
-  <% search.each do |data| %>
-    <% post = Post.new(data) %>
+  <% @posts.each do |post| %>
     <% if post.message %>
       <tr>
         <td class="user">
-          <%= image_tag post.author.picture.url, :alt => post.author.name %>
+          <%= image_tag post.author.picture.get, :alt => post.author.name %>
           <%= post.author.name %>
         </td>
         <td class="post">
@@ -22,7 +20,7 @@
             <div class="modal"><%= post.message %></div>
           <% end %>
           <% if post.picture %>
-            <%= image_tag post.picture.url, :alt => "Photo for " << (post.name || "post") %>
+            <%= image_tag post.picture.get, :alt => "Photo for " << (post.name || "post") %>
           <% end %>
         </td>
       </tr>
