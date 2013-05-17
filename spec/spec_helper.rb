@@ -1,3 +1,5 @@
+require 'vcr_setup'
+
 require 'simplecov'
 SimpleCov.start "rails"
 

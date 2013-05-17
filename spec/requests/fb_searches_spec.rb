@@ -1,17 +1,18 @@
 require 'spec_helper'
 
 describe "FbSearches" do
-  before { @search = FbSearch.create(:keywords => "llama") }
+  before { @search = FbSearch.create(:keywords => "llama", :search_type => "post") }
 
   describe "going to home page" do
     before { visit root_path }
 
     it "should have the correct title" do
-      page.should have_selector('h1', :content => 'Facebook Search')
+      page.should have_selector('h1', :text => 'Facebook Search')
     end
 
     it "should have the correct form elements" do
       page.should have_selector('input', :type => 'text')
+      page.should have_selector('select')
       page.should have_selector('input', :type => 'submit')
     end
 
@@ -27,32 +28,41 @@ describe "FbSearches" do
       end
 
       it "should not add a repeated search to the database" do
-        fill_in :keywords, :with => @search.keywords
-        expect { click_button "Search" }.not_to change(FbSearch, :count)
-        current_path.should == fb_search_path(@search)
+        VCR.use_cassette('Cassette3') do
+          fill_in :keywords, :with => @search.keywords
+          expect { click_button "Search" }.not_to change(FbSearch, :count)
+          current_path.should == fb_search_path(@search)
+        end
       end
 
       it "should increment frequency of a repeated search" do
-        fill_in :keywords, :with => @search.keywords
-        click_button "Search"
-        freq = @search.frequency
-        visit root_path
-        fill_in :keywords, :with => @search.keywords
-        expect { @search.frequency.to eql(freq + 1) }
+        VCR.use_cassette('Cassette1') do
+          fill_in :keywords, :with => @search.keywords
+          click_button "Search"
+          freq = @search.frequency
+          visit root_path
+          fill_in :keywords, :with => @search.keywords
+          expect { @search.frequency.to eql(freq + 1) }
+        end
       end
 
       it "should accept a valid search" do
-        fill_in :keywords, :with => "squirrels"
-        expect { click_button "Search" }.to change(FbSearch, :count).by(1)
-        page.should have_selector('h1', :content => "Search Results: squirrels")
+        VCR.use_cassette('Cassette4') do
+          fill_in :keywords, :with => "squirrels"
+          expect { click_button "Search" }.to change(FbSearch, :count).by(1)
+          page.should have_selector('h1', :content => "Search Results: squirrels")
+        end
       end
     end
   end
 
   describe "going to search results page" do
-    before { visit fb_search_path(@search) }
+
     it "should have the correct links" do
-      page.should have_link('Back to new search', :href => root_path)
+      VCR.use_cassette('Cassette2') do
+        visit fb_search_path(@search)
+        page.should have_link('Back to new search', :href => root_path)
+      end
     end
   end
 
@@ -75,10 +85,6 @@ describe "FbSearches" do
       page.should have_link('remove', :href => fb_search_path(@search))
       expect { click_link 'remove' }.to change(FbSearch, :count).by(-1)
       current_path.should == fb_searches_path
-    end
-
-    it "should list the frequency of each search" do
-      page.should have_content("(#{@search.frequency})")
     end
   end
 end

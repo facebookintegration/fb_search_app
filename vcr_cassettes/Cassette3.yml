@@ -1,0 +1,1153 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://graph.facebook.com/search?q=llama&type=application
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Faraday v0.8.7
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      access-control-allow-origin:
+      - ! '*'
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      content-type:
+      - application/json; charset=UTF-8
+      etag:
+      - ! '"e5429c3c282bd3174f756f2e53a0dc87b4b24f13"'
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      pragma:
+      - no-cache
+      x-fb-rev:
+      - '818929'
+      content-encoding:
+      - gzip
+      x-fb-debug:
+      - TOEZDxTGd1QsbBmtdwl6ElroKaaqBWzJ/x6DoWjcAAI=
+      date:
+      - Fri, 17 May 2013 20:30:06 GMT
+      connection:
+      - close
+      content-length:
+      - '1013'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA4VWa0/jRhT9K7P5gFoJwzw89hgJIRdS2go22wRWK5UKje2x
+        M9nY4/VjFVjtf+8dh5jYRFSKlMck55577rln8mOSyEZOzv75MSlkriZnk5u1
+        zCValLpB1/aT4+6gLmVsT9f21NGF82Tayknth8cTncAJcynGwhVc+Jz4dPLz
+        eAhZ/d6qSh6Cq1J7Isuyh/IF9png3CPMZ8E+1K2uUccwkTW6rmSj6xFkruuO
+        JHwh2513BAPuEp8QyoW3jxiqyuRqo2ODHlqME7luNAjwUmQELnOn7c5fSuwY
+        U8EY86gQrsspwYPmb8Lb8CpcoBBd3v8WnqDr8GOIrufh3Z+LEXrcRlvgHtYP
+        COcupYQLSv192KvKjqljOUJJ7MkAhhAMECzgPqYuc/dhbMtRGtunlOUG1Qp1
+        P0VNi2RuqosRuBM7uXFq5azXTqSyJJGrHVkSYO4xSjHl5KAAB3vOddE2pna2
+        s3KWdpzduKgvPB74HFwALwYjuzR7TCvLXRFLOG2btjKoMN+1ubgYU4/hV1vm
+        0oGW5SqKXqnbUq6tNaD+l6o7ZcBrzYswPT0aeIIKMChnMJ03dk8kShT6JMsX
+        eh+NWh8yfyKdRDmlLKVTbL/SdU84w5yBnQTjggxI7ZjkpteKYBcLTgVQcj13
+        sHvxaKi5WpkKRqsz+UagXp8cBFqqJOlnCzakhGKG6YDKlX5+ftqa8HVumGLC
+        fXCC73n+wLM3cmuu5E0M7Pap7WE44x54KWCE+C7j+/p241+obd1KorsW/aFX
+        5hf567sjX8osWSY7gQPXxx5sAxGDbbUmGSyBgvQzlUyM+fBhvK77hopULF93
+        QcDGYZgKxMGBbRvYt1u1WmetVgWMdmveN1u3V2qziXTaRwTELWQa6OQOpB72
+        odYoXtqE+9Yq6+SsrRv5PwuyyrJ42auFmQ/Z7nF3mJ3fVQXMJRpsJIJyl325
+        tQG3ybpRNYKnk5NRa3CzNE4kv26KVdE3RVzqQikXbBS4hA2GP7udocUU3dhY
+        nYfo7h6Ft7P5WLFSNpVulipS0GnRmH6vmIup59lHEAyXHdz52TwjVYwMDQ70
+        BPF8CHcmgoH/DwYRdF92oZSyjQY3dco/nMpOfMjXraOUjYdGv+vYbJUmSdpT
+        x4L4QSCo5w7i5nJfEXQTok/T+WIGd8wX++bv+ym6vZ/Opwt0NbVSzWbzd3wc
+        R1my2st0wjBcxlA0gFT593hSykwX2eQM7na1aSColk1T1mcPpw+nkODl8sT+
+        JYiM+XoCDnw4rZWs4uXFt/Nu74+ap1Kdw0W/1jGkvSmO1jrXzTnlRyZNa9W9
+        enyUaaOqR52ck0H1n/8BQhAC2KwIAAA=
+    http_version: '1.1'
+  recorded_at: Fri, 17 May 2013 20:30:06 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/342008485875172/picture?redirect=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Faraday v0.8.7
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      access-control-allow-origin:
+      - ! '*'
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      content-type:
+      - application/json; charset=UTF-8
+      etag:
+      - ! '"9252e71179d4278bf3329a394feb728b463946c0"'
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      pragma:
+      - no-cache
+      x-fb-rev:
+      - '818929'
+      x-fb-debug:
+      - w5o56JxOKURkGsvvpFjbHAHJuCkNGB/9raKMikveduI=
+      date:
+      - Fri, 17 May 2013 20:30:06 GMT
+      connection:
+      - close
+      content-length:
+      - '141'
+    body:
+      encoding: US-ASCII
+      string: ! '{"data":{"url":"https:\/\/fbcdn-photos-f-a.akamaihd.net\/photos-ak-snc7\/v85005\/172\/342008485875172\/app_1_342008485875172_335809785.gif"}}'
+    http_version: '1.1'
+  recorded_at: Fri, 17 May 2013 20:30:06 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/378073855613739/picture?redirect=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Faraday v0.8.7
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      access-control-allow-origin:
+      - ! '*'
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      content-type:
+      - application/json; charset=UTF-8
+      etag:
+      - ! '"c43d755c4ca59e760914499956b4a966c5d98958"'
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      pragma:
+      - no-cache
+      x-fb-rev:
+      - '818929'
+      x-fb-debug:
+      - JpPQ5ZuWAacdmGh7SwukhdLFT1Y6XNCNd3jzp//JqCw=
+      date:
+      - Fri, 17 May 2013 20:30:07 GMT
+      connection:
+      - close
+      content-length:
+      - '141'
+    body:
+      encoding: US-ASCII
+      string: ! '{"data":{"url":"https:\/\/fbcdn-photos-a-a.akamaihd.net\/photos-ak-snc7\/v85006\/22\/468901199828650\/app_115_468901199828650_22091059.png"}}'
+    http_version: '1.1'
+  recorded_at: Fri, 17 May 2013 20:30:07 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/95417112586/picture?redirect=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Faraday v0.8.7
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      access-control-allow-origin:
+      - ! '*'
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      content-type:
+      - application/json; charset=UTF-8
+      etag:
+      - ! '"58d24821b0e9dbec154b244e44551bc5d6edae10"'
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      pragma:
+      - no-cache
+      x-fb-rev:
+      - '818929'
+      x-fb-debug:
+      - e3HDCVQzhUuqjKAovivjVgdeCBYIy4HrDGBLwT4rcBU=
+      date:
+      - Fri, 17 May 2013 20:30:07 GMT
+      connection:
+      - close
+      content-length:
+      - '118'
+    body:
+      encoding: US-ASCII
+      string: ! '{"data":{"url":"https:\/\/fbcdn-photos-f-a.akamaihd.net\/hphotos-ak-ash3\/851562_10151352759117587_1468272103_n.gif"}}'
+    http_version: '1.1'
+  recorded_at: Fri, 17 May 2013 20:30:07 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/283336288445210/picture?redirect=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Faraday v0.8.7
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      access-control-allow-origin:
+      - ! '*'
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      content-type:
+      - application/json; charset=UTF-8
+      etag:
+      - ! '"bbc8a7b43274e76ac82e3ff5e38849fea43f896e"'
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      pragma:
+      - no-cache
+      x-fb-rev:
+      - '818929'
+      x-fb-debug:
+      - ZEBZkL/+Lx75dKi5jDjAPJ5YKdsGWPKW1SUS/Kdhz1A=
+      date:
+      - Fri, 17 May 2013 20:30:07 GMT
+      connection:
+      - close
+      content-length:
+      - '141'
+    body:
+      encoding: US-ASCII
+      string: ! '{"data":{"url":"https:\/\/fbcdn-photos-g-a.akamaihd.net\/photos-ak-snc7\/v43\/226\/399832880095378\/app_115_399832880095378_1709576344.png"}}'
+    http_version: '1.1'
+  recorded_at: Fri, 17 May 2013 20:30:07 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/279155422158227/picture?redirect=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Faraday v0.8.7
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      access-control-allow-origin:
+      - ! '*'
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      content-type:
+      - application/json; charset=UTF-8
+      etag:
+      - ! '"838f67bfe20ec1e39a17e8b1a98c96f7f84bdc16"'
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      pragma:
+      - no-cache
+      x-fb-rev:
+      - '818929'
+      x-fb-debug:
+      - gSUYAultxLEocqAy1FqcxwIGrKswAdzYzd5EEuDIoec=
+      date:
+      - Fri, 17 May 2013 20:30:08 GMT
+      connection:
+      - close
+      content-length:
+      - '141'
+    body:
+      encoding: US-ASCII
+      string: ! '{"data":{"url":"https:\/\/fbcdn-photos-a.akamaihd.net\/photos-ak-snc7\/v27562\/55\/108498255989059\/app_115_108498255989059_1719196212.png"}}'
+    http_version: '1.1'
+  recorded_at: Fri, 17 May 2013 20:30:08 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/110221395702434/picture?redirect=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Faraday v0.8.7
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      access-control-allow-origin:
+      - ! '*'
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      content-type:
+      - application/json; charset=UTF-8
+      etag:
+      - ! '"609b11b69649d5b38a290bb5a2a74c34f442176d"'
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      pragma:
+      - no-cache
+      x-fb-rev:
+      - '818929'
+      x-fb-debug:
+      - r8WVRgqU0GbS42JhmZQdSlkd856VZkZc0hB562dU/1s=
+      date:
+      - Fri, 17 May 2013 20:30:08 GMT
+      connection:
+      - close
+      content-length:
+      - '114'
+    body:
+      encoding: US-ASCII
+      string: ! '{"data":{"url":"https:\/\/fbcdn-photos-f-a.akamaihd.net\/hphotos-ak-prn1\/851575_514128025311767_20311712_n.gif"}}'
+    http_version: '1.1'
+  recorded_at: Fri, 17 May 2013 20:30:08 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/190563220251/picture?redirect=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Faraday v0.8.7
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      access-control-allow-origin:
+      - ! '*'
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      content-type:
+      - application/json; charset=UTF-8
+      etag:
+      - ! '"d98b0a9ab5cca85d1c0a839aa4e1c1f9062f05b9"'
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      pragma:
+      - no-cache
+      x-fb-rev:
+      - '818929'
+      x-fb-debug:
+      - oUIV1eFaL0hKSSS0f9/p6me8k7GU87dTjxLkkx0Ce+c=
+      date:
+      - Fri, 17 May 2013 20:30:08 GMT
+      connection:
+      - close
+      content-length:
+      - '118'
+    body:
+      encoding: US-ASCII
+      string: ! '{"data":{"url":"https:\/\/fbcdn-photos-b-a.akamaihd.net\/hphotos-ak-prn1\/851579_10152784215155252_1337595515_n.gif"}}'
+    http_version: '1.1'
+  recorded_at: Fri, 17 May 2013 20:30:08 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/278659755568656/picture?redirect=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Faraday v0.8.7
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      access-control-allow-origin:
+      - ! '*'
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      content-type:
+      - application/json; charset=UTF-8
+      etag:
+      - ! '"ea29c3ba87cffb0bedea50a3a5a7fa5afb69e5be"'
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      pragma:
+      - no-cache
+      x-fb-rev:
+      - '818929'
+      x-fb-debug:
+      - 0SUufcBdPjpx548gRQXQ/KFLUGfAszDldlGPDVMdiz0=
+      date:
+      - Fri, 17 May 2013 20:30:09 GMT
+      connection:
+      - close
+      content-length:
+      - '90'
+    body:
+      encoding: US-ASCII
+      string: ! '{"data":{"url":"https:\/\/fbstatic-a.akamaihd.net\/rsrc.php\/v2\/y_\/r\/9myDd8iyu0B.gif"}}'
+    http_version: '1.1'
+  recorded_at: Fri, 17 May 2013 20:30:09 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/196597455561/picture?redirect=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Faraday v0.8.7
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      access-control-allow-origin:
+      - ! '*'
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      content-type:
+      - application/json; charset=UTF-8
+      etag:
+      - ! '"6bac5a0d55b5bc4208d4505f1939b0214757a5dd"'
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      pragma:
+      - no-cache
+      x-fb-rev:
+      - '818929'
+      x-fb-debug:
+      - Ri/mGV0sMiysy8n+uI4GxjSao48M2jkdpqimk/nkGOY=
+      date:
+      - Fri, 17 May 2013 20:30:09 GMT
+      connection:
+      - close
+      content-length:
+      - '126'
+    body:
+      encoding: US-ASCII
+      string: ! '{"data":{"url":"https:\/\/fbcdn-photos-e-a.akamaihd.net\/photos-ak-snc7\/v43\/45\/196597455561\/app_1_196597455561_6190.gif"}}'
+    http_version: '1.1'
+  recorded_at: Fri, 17 May 2013 20:30:09 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/229682813753158/picture?redirect=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Faraday v0.8.7
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      access-control-allow-origin:
+      - ! '*'
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      content-type:
+      - application/json; charset=UTF-8
+      etag:
+      - ! '"ea29c3ba87cffb0bedea50a3a5a7fa5afb69e5be"'
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      pragma:
+      - no-cache
+      x-fb-rev:
+      - '818929'
+      x-fb-debug:
+      - Ye4z+SE3O0YQ2rjBMv1AqbJDEzu90VzxLPsMTfFoLT4=
+      date:
+      - Fri, 17 May 2013 20:30:10 GMT
+      connection:
+      - close
+      content-length:
+      - '90'
+    body:
+      encoding: US-ASCII
+      string: ! '{"data":{"url":"https:\/\/fbstatic-a.akamaihd.net\/rsrc.php\/v2\/y_\/r\/9myDd8iyu0B.gif"}}'
+    http_version: '1.1'
+  recorded_at: Fri, 17 May 2013 20:30:10 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/153053844835811/picture?redirect=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Faraday v0.8.7
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      access-control-allow-origin:
+      - ! '*'
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      content-type:
+      - application/json; charset=UTF-8
+      etag:
+      - ! '"2384d31cf7e15537ade7fbcf9ff4d87d4f2bff43"'
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      pragma:
+      - no-cache
+      x-fb-rev:
+      - '818929'
+      x-fb-debug:
+      - iDAYnSg9zMjN6s4TebJ4YVk/2VvB9HXL3kFXOitX0+I=
+      date:
+      - Fri, 17 May 2013 20:30:10 GMT
+      connection:
+      - close
+      content-length:
+      - '143'
+    body:
+      encoding: US-ASCII
+      string: ! '{"data":{"url":"https:\/\/fbcdn-photos-f-a.akamaihd.net\/photos-ak-snc7\/v85006\/234\/426304714104090\/app_115_426304714104090_966418214.png"}}'
+    http_version: '1.1'
+  recorded_at: Fri, 17 May 2013 20:30:10 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/104085289684642/picture?redirect=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Faraday v0.8.7
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      access-control-allow-origin:
+      - ! '*'
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      content-type:
+      - application/json; charset=UTF-8
+      etag:
+      - ! '"ea29c3ba87cffb0bedea50a3a5a7fa5afb69e5be"'
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      pragma:
+      - no-cache
+      x-fb-rev:
+      - '818929'
+      x-fb-debug:
+      - YQ160l6Y2eh2OTRv7x2CpwQkFfF5DRLi7gNK16NmfNg=
+      date:
+      - Fri, 17 May 2013 20:30:10 GMT
+      connection:
+      - close
+      content-length:
+      - '90'
+    body:
+      encoding: US-ASCII
+      string: ! '{"data":{"url":"https:\/\/fbstatic-a.akamaihd.net\/rsrc.php\/v2\/y_\/r\/9myDd8iyu0B.gif"}}'
+    http_version: '1.1'
+  recorded_at: Fri, 17 May 2013 20:30:10 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/91521203021/picture?redirect=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Faraday v0.8.7
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      access-control-allow-origin:
+      - ! '*'
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      content-type:
+      - application/json; charset=UTF-8
+      etag:
+      - ! '"701ec4beeb14c947cf26798e9f73856df49251bb"'
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      pragma:
+      - no-cache
+      x-fb-rev:
+      - '818929'
+      x-fb-debug:
+      - yXyPlh7f2Xia/duMj8rrrF6h8Jx57kmUlCnCQn4+Ncc=
+      date:
+      - Fri, 17 May 2013 20:30:11 GMT
+      connection:
+      - close
+      content-length:
+      - '117'
+    body:
+      encoding: US-ASCII
+      string: ! '{"data":{"url":"https:\/\/fbcdn-photos-e-a.akamaihd.net\/hphotos-ak-prn1\/851579_10151540247128022_728445099_n.gif"}}'
+    http_version: '1.1'
+  recorded_at: Fri, 17 May 2013 20:30:11 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/202015763276677/picture?redirect=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Faraday v0.8.7
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      access-control-allow-origin:
+      - ! '*'
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      content-type:
+      - application/json; charset=UTF-8
+      etag:
+      - ! '"ea29c3ba87cffb0bedea50a3a5a7fa5afb69e5be"'
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      pragma:
+      - no-cache
+      x-fb-rev:
+      - '818929'
+      x-fb-debug:
+      - 5X+RyFDPYijMyWHWaSZze93zsr7jfHtJR2EsZFQr/o0=
+      date:
+      - Fri, 17 May 2013 20:30:11 GMT
+      connection:
+      - close
+      content-length:
+      - '90'
+    body:
+      encoding: US-ASCII
+      string: ! '{"data":{"url":"https:\/\/fbstatic-a.akamaihd.net\/rsrc.php\/v2\/y_\/r\/9myDd8iyu0B.gif"}}'
+    http_version: '1.1'
+  recorded_at: Fri, 17 May 2013 20:30:11 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/535622093117435/picture?redirect=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Faraday v0.8.7
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      access-control-allow-origin:
+      - ! '*'
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      content-type:
+      - application/json; charset=UTF-8
+      etag:
+      - ! '"df6f7b05e56e039ab9fdfaf65ab40e43c6c7d715"'
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      pragma:
+      - no-cache
+      x-fb-rev:
+      - '818929'
+      x-fb-debug:
+      - 0wO5kOhTgCJywiH/bTwctfn9kps80vTNZuTHeddgAnA=
+      date:
+      - Fri, 17 May 2013 20:30:11 GMT
+      connection:
+      - close
+      content-length:
+      - '143'
+    body:
+      encoding: US-ASCII
+      string: ! '{"data":{"url":"https:\/\/fbcdn-photos-h-a.akamaihd.net\/photos-ak-snc7\/v27562\/95\/232436833553075\/app_115_232436833553075_2059528635.png"}}'
+    http_version: '1.1'
+  recorded_at: Fri, 17 May 2013 20:30:12 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/94706243180/picture?redirect=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Faraday v0.8.7
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      access-control-allow-origin:
+      - ! '*'
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      content-type:
+      - application/json; charset=UTF-8
+      etag:
+      - ! '"27b80edb1629330c257d57fb177b9214c21acf95"'
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      pragma:
+      - no-cache
+      x-fb-rev:
+      - '818929'
+      x-fb-debug:
+      - 5GEsJbHquKRL4f5QqiOutH1CK8FECwNtCzBmS9ME1HA=
+      date:
+      - Fri, 17 May 2013 20:30:12 GMT
+      connection:
+      - close
+      content-length:
+      - '117'
+    body:
+      encoding: US-ASCII
+      string: ! '{"data":{"url":"https:\/\/fbcdn-photos-g-a.akamaihd.net\/hphotos-ak-ash3\/851579_10151431092213181_960122802_n.gif"}}'
+    http_version: '1.1'
+  recorded_at: Fri, 17 May 2013 20:30:12 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/81020104445/picture?redirect=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Faraday v0.8.7
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      access-control-allow-origin:
+      - ! '*'
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      content-type:
+      - application/json; charset=UTF-8
+      etag:
+      - ! '"de673f40f2f9cc9c97c0e7daa6b91100440867b2"'
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      pragma:
+      - no-cache
+      x-fb-rev:
+      - '818929'
+      x-fb-debug:
+      - iO0dgDRO6wH5on6SSFhZNIY49yhCg5S2jghek28cHik=
+      date:
+      - Fri, 17 May 2013 20:30:12 GMT
+      connection:
+      - close
+      content-length:
+      - '117'
+    body:
+      encoding: US-ASCII
+      string: ! '{"data":{"url":"https:\/\/fbcdn-photos-b-a.akamaihd.net\/hphotos-ak-prn1\/851565_10151598164959446_481766894_n.gif"}}'
+    http_version: '1.1'
+  recorded_at: Fri, 17 May 2013 20:30:12 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/58711209347/picture?redirect=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Faraday v0.8.7
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      access-control-allow-origin:
+      - ! '*'
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      content-type:
+      - application/json; charset=UTF-8
+      etag:
+      - ! '"710f05ca34b8ad7007e02b9f1ab2f923643ef917"'
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      pragma:
+      - no-cache
+      x-fb-rev:
+      - '818929'
+      x-fb-debug:
+      - 0pfiL1UTSb46u2fcbQyLxQktJterGr4uow7rjtc9chU=
+      date:
+      - Fri, 17 May 2013 20:30:13 GMT
+      connection:
+      - close
+      content-length:
+      - '117'
+    body:
+      encoding: US-ASCII
+      string: ! '{"data":{"url":"https:\/\/fbcdn-photos-f-a.akamaihd.net\/hphotos-ak-prn1\/851582_10151893107934348_628166167_n.gif"}}'
+    http_version: '1.1'
+  recorded_at: Fri, 17 May 2013 20:30:13 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/90378486546/picture?redirect=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Faraday v0.8.7
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      access-control-allow-origin:
+      - ! '*'
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      content-type:
+      - application/json; charset=UTF-8
+      etag:
+      - ! '"b32dfd7a181569ed29c097f7bc96d5e4a6799325"'
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      pragma:
+      - no-cache
+      x-fb-rev:
+      - '818929'
+      x-fb-debug:
+      - PEBo+ho0Akbk1pKtILp8ZHbuMFYJ55nP3nREnR5kbn8=
+      date:
+      - Fri, 17 May 2013 20:30:13 GMT
+      connection:
+      - close
+      content-length:
+      - '116'
+    body:
+      encoding: US-ASCII
+      string: ! '{"data":{"url":"https:\/\/fbcdn-photos-a.akamaihd.net\/hphotos-ak-ash3\/851576_10151425146971547_1441627000_n.gif"}}'
+    http_version: '1.1'
+  recorded_at: Fri, 17 May 2013 20:30:13 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/142454645769413/picture?redirect=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Faraday v0.8.7
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      access-control-allow-origin:
+      - ! '*'
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      content-type:
+      - application/json; charset=UTF-8
+      etag:
+      - ! '"ab7352531d465b016a0c5aa96f7028073ef6e957"'
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      pragma:
+      - no-cache
+      x-fb-rev:
+      - '818929'
+      x-fb-debug:
+      - EPKGnNzYuh0n8pKepjl7to8r7Yvs7A3JF0AhMTrG9SM=
+      date:
+      - Fri, 17 May 2013 20:30:13 GMT
+      connection:
+      - close
+      content-length:
+      - '136'
+    body:
+      encoding: US-ASCII
+      string: ! '{"data":{"url":"https:\/\/fbcdn-photos-c-a.akamaihd.net\/photos-ak-snc7\/v85006\/173\/142454645769413\/app_1_142454645769413_1104.gif"}}'
+    http_version: '1.1'
+  recorded_at: Fri, 17 May 2013 20:30:13 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/134026626629961/picture?redirect=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Faraday v0.8.7
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      access-control-allow-origin:
+      - ! '*'
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      content-type:
+      - application/json; charset=UTF-8
+      etag:
+      - ! '"0d970d26b1447d49e38ac15e6fbabea63ac3fa79"'
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      pragma:
+      - no-cache
+      x-fb-rev:
+      - '818929'
+      x-fb-debug:
+      - kwUde7f0MZIhgg898lislRDFjx0dQ1kkvaaCORzFB4c=
+      date:
+      - Fri, 17 May 2013 20:30:14 GMT
+      connection:
+      - close
+      content-length:
+      - '116'
+    body:
+      encoding: US-ASCII
+      string: ! '{"data":{"url":"https:\/\/fbcdn-photos-c-a.akamaihd.net\/hphotos-ak-prn1\/851579_581463001886319_1862354526_n.gif"}}'
+    http_version: '1.1'
+  recorded_at: Fri, 17 May 2013 20:30:14 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/311681678843891/picture?redirect=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Faraday v0.8.7
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      access-control-allow-origin:
+      - ! '*'
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      content-type:
+      - application/json; charset=UTF-8
+      etag:
+      - ! '"bbaea8e047d66d816f0a903269509d00c7bb7bcb"'
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      pragma:
+      - no-cache
+      x-fb-rev:
+      - '818929'
+      x-fb-debug:
+      - X4oh//CsfYNAcoQGKPxLtQXRC6LMhbBo5PLW/COtSkE=
+      date:
+      - Fri, 17 May 2013 20:30:14 GMT
+      connection:
+      - close
+      content-length:
+      - '135'
+    body:
+      encoding: US-ASCII
+      string: ! '{"data":{"url":"https:\/\/fbcdn-photos-d-a.akamaihd.net\/photos-ak-snc7\/v85006\/83\/311681678843891\/app_1_311681678843891_5179.gif"}}'
+    http_version: '1.1'
+  recorded_at: Fri, 17 May 2013 20:30:14 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/108179982648/picture?redirect=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Faraday v0.8.7
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      access-control-allow-origin:
+      - ! '*'
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      content-type:
+      - application/json; charset=UTF-8
+      etag:
+      - ! '"97cf8ba4f15130ab547c9271483e0c8da581550d"'
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      pragma:
+      - no-cache
+      x-fb-rev:
+      - '818929'
+      x-fb-debug:
+      - WJ2zwF81CSBrcSO+dk2/0DkDdSH/EyAVCFcsR90fvI0=
+      date:
+      - Fri, 17 May 2013 20:30:14 GMT
+      connection:
+      - close
+      content-length:
+      - '117'
+    body:
+      encoding: US-ASCII
+      string: ! '{"data":{"url":"https:\/\/fbcdn-photos-a-a.akamaihd.net\/hphotos-ak-prn1\/851575_10151552639692649_458569168_n.gif"}}'
+    http_version: '1.1'
+  recorded_at: Fri, 17 May 2013 20:30:14 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/113078098292/picture?redirect=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Faraday v0.8.7
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      access-control-allow-origin:
+      - ! '*'
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      content-type:
+      - application/json; charset=UTF-8
+      etag:
+      - ! '"ea29c3ba87cffb0bedea50a3a5a7fa5afb69e5be"'
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      pragma:
+      - no-cache
+      x-fb-rev:
+      - '818929'
+      x-fb-debug:
+      - PKw/S5lpYKi3gybDyfLgDOXQQekrOGbQsja/hwmAChY=
+      date:
+      - Fri, 17 May 2013 20:30:15 GMT
+      connection:
+      - close
+      content-length:
+      - '90'
+    body:
+      encoding: US-ASCII
+      string: ! '{"data":{"url":"https:\/\/fbstatic-a.akamaihd.net\/rsrc.php\/v2\/y_\/r\/9myDd8iyu0B.gif"}}'
+    http_version: '1.1'
+  recorded_at: Fri, 17 May 2013 20:30:15 GMT
+recorded_with: VCR 2.4.0

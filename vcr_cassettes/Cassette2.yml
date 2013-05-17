@@ -1,0 +1,1413 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://graph.facebook.com/search?q=llama&type=post
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Faraday v0.8.7
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      access-control-allow-origin:
+      - ! '*'
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      content-type:
+      - application/json; charset=UTF-8
+      etag:
+      - ! '"c0a59c35a7da0107b48cc10a2287826f628ccf79"'
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      pragma:
+      - no-cache
+      x-fb-rev:
+      - '818929'
+      content-encoding:
+      - gzip
+      x-fb-debug:
+      - aQqRzDj6aXqv6AOkhgEa9bHke1/zDa8WwkUDP5KoDD8=
+      date:
+      - Fri, 17 May 2013 20:28:17 GMT
+      connection:
+      - close
+      content-length:
+      - '12691'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA+2dCXPbVrat/wqirkrsXInmPOiVy0VbsqO0BkeS3S+5vKUC
+        SVCCTQIMBzlSOv/9fWufA3CQZNNOpzuvbjqdSCKBgzPuYe21N37d6oezcGv3
+        v3/divtbu1ulIv8r1Uu1Sr1VapUuaqVGq1KsNKot/m0Ut7a3BpN0tLX761YS
+        jiJuOAoncRq0L+fxMJzw9X2tbP22vTWKptPwUnecRcFwGI7CYBomvas0GMdR
+        Mk2DJA2iaRAlwTRSi9O1q96Fq//wqOksndysdyGYXoWTqB+cHOyftY/4Z6/9
+        zTQYX6WztMA947g3m0/UjavZbLzbedJ5Yt9Nd6JC+L4w6Pb6SSGJZp0nV/7z
+        8P3OYNKrdJ60GsVis8aMVFq1YrlWq9QarWLzolwqVfmqXKlfTAvj5JKHDOPk
+        /fITPnz4UBiEvaibpu8LvXTkn1kYX42fDbpx/+lam19Po9nTsFAq1YtFlqLU
+        LDVbzVah3CzWy4VSsVllOerlWqPM71/PbsbR0xJP9QtyHo8iOhAFr21cfNEL
+        x7M4TehR4eH/aW4m6TiazOJoavvBt/f8hq9m0S8z7l+aVD68mkSDjw/zhLZY
+        6VHYD08GcS8Oh8+45+l0NonC0dZv/8N26VnH8sWYzsJZ3Ftbisl00tNkdZ5c
+        lztPbvY6TyadJ+FZM+qNfjy9mRYLl/HA+h9fhz12xK9b1+FwrkXWztME8ast
+        J1el3XdRb3Zh+3Rt3vk2HI+HcY8+qFv5HLz0ixcM0knQTvqTlNvdjE/HfEdT
+        g26Yf25tV2rFepNdUmqUm+pGjzHPov7FjPXh63KxVNkp1nZKjfNycbfc3C3W
+        /0tnj2bnY87kBlf+tr1yaFulaq1aLZdaF9VWrd6olKtFulBt3XNoNQQO24ur
+        8DqaaFKWTm3ezOqp/TENhmnAaqW3vaXT2Z2EN2Hy1eJ/S+dy9SnZwXw1jyaT
+        MOhHPD6ezqLp7z6e4fSK41ltNurV6kWt2uDE1OrNer3KPxelRqOMMGvWaxzP
+        d+MvO56rbWbHs1WttkrlZgUBWW80C9U6IrJQalaaDSRmqV5rlRrFzzqeCwkX
+        dCadZOc8DftBcpHoj/yESJhc2hz2o56bwcLsuvNkowN8Z/I3Osburr3IL1jh
+        /O2f7Bivrs//r8e4VuH4tpD6F6Uie7jKFmpWy5VqqdS4q3f3WXhETnAaxUmY
+        neC8hTWNe5D9L5f/3+0H+8cvTo7PT9t7J8H+YdA+Pj/YOzk/CdyH+uj7kz0+
+        Cr5/c3Z+cBw8P9h/vn+aNXC2Hxweol2D9tlB8GNwdnJ4Epwf7B/vB6VG0O7M
+        i8V+6eQsu/rNcfD65MVJsHfwcv90//h8fzs4Pnlm/1vb2TfpfDbvRk5Lfghn
+        vatn108HPxbT15elq+bgh/tVONopmiThcE1vTMNBdBGPMDtM1faftn/YO6m3
+        Jt2T5+9/PJuc3n794WmpUvz6yv47nwyf6pSp84gMG0S5Vn6Z/YwrhRuE96X1
+        zX93HWe/LfUx+2gU/oKU7UeDcD6cSfb4ll8O0AQYIf7PvfQhobTBZEzT+cT0
+        z4p8WLkR2bDUuWfhfJZexX1shq8R/lMU3dPK1/pwPAxvlg2J78P3UfB8fnkZ
+        7ASH8eXVLImTy+B5OpzxwcnA6fPgLU1Jg/SjaW8SZ4bG0Xwa94JrfWc685vV
+        Br4J9uIJWhg7rXsTHMW9qzAaBt+lw5v3wZ1rt4PZVRQk0YdgSgeGUSALNMh7
+        Vwja1yHGZ5dvZmnQTz8kQ8lNuyo+nycouiT9sBvkM9SN2Zc6Ml9ge7wz2+O6
+        fJKE5zfnP/y0v5HtYRMhS+yjNkBjt1bezAZYXLlqA9QwCpuVeqVVvShVG5VG
+        s1TGJGhUq817Dfd5cBQl/fQ2lx9m/S8aWbMAglEcYCBOWNKY5cot9PfxmI8f
+        sK6vZ1fzUXfdtnaf7mBbO+Vdwpytly6q9XK9UqvXUeHVerHu/6417O9S7aKC
+        UdW6KJVazQs7UJ9pa18/dQ/IG5SxcucA2WLd6bA+VH/Hk6TEBug8adTKzSa2
+        luuyNBBdbl6UaBw7rFUqXiSF0bj6LL16WhywBmG/We8Xo0YUhvVKM6r0avVW
+        FDVajUr36zTCBWg168VW5euLi8t+eHGBSKo3Wy30QOmi2630m7WwWB/0m2G/
+        2+3yuG6v2q0N0BZhr7cw/o/Cm6BU2w5kXQal0m6xhJ29fjiPT4Lv2j8Ge2/2
+        2sEPb1AEh4cnZ4jw40A/j/a/PzndPwvaRwev+HNvP3jDDUh5/nt0gPQO9s/O
+        94O3B3v7J0j+FydHr9un5+3jw5NCJ+kknLdZFIT4crMwGIeXaKcg/HkuWcdp
+        v+sJTRGO4WQWPWi+HEbJ5exq4YMwqNq/2XXIju+y63B3J/2nXAeEQXFjseGv
+        XBMbrSrbr1jW2SpWyw1+aTWaxVa9cq/YiMPg1RyXbjgfR8GrcDiMLs3PXDgR
+        tbzBVRHy3f7p0clZ+yyQ2XHw4uDkeN/bCGwjNllmVLDD2sFe+/indqHgN9j+
+        kmMhzOG+PmQuBlv5BBOGvX16sKn7P/io+8+RrxZLrUrrolau4FFUiw2cu3Kd
+        CcPhKtcbQga+3L9YbTPzL5qNUrUIvFCpNqutcgGfv1gqlOp83GrU6nSE3z7L
+        v/juTfus/ZzpfxocvnnVPsUE/O5g//S5TMAT/9HeyTFH/pCLXp6+OecHCMqb
+        0/ZxcL5/9JqfJ3JGzD3Zax/uB52to/3gFRZiu7MVtIPjNywdU/+SG163X+3f
+        d+DT5Oe+NM6n4YbVddzIVZla638y92R1eR90T3LAxg5SuYImbpTx4z+NHjR2
+        KxuLgOzKXAQA8TXRueWiczvY3gCA0sJloUprcN/3ET7H62gS3eY+R3a7YS2p
+        UJNVSLHSrJfL5QooVqXcLMuVAV9BZBh2dzYOp50n3QgD9AZYDIM0xY4PemB4
+        C612GN6CCc6wVvoBNyD9VwDFta89uvhjG1CCNjzweDELL8G1ft0qLsDOuz3z
+        mNf6AxcgkiBMMKTBAIhua7cI1ufU026pZr3KMMnFPGVCaa3NzVCP8GGphOFU
+        7TypIIdKZawQWRzlUqWGPdEoXoBG6vdm48uF0lqTXihpyirFaqvawFxp1Avo
+        iXqjsDaRnyeU5pPJzVdfBedgGQETG02CD2nyzSzoYkZM0nmCKY8HMUyTy232
+        xXAYzKcy9FmAYD4OcHUmAao3jZPZKEpmwSPAr8eNcnkHt1n669Ni5u5qfxrZ
+        9PewI9mQfy5xs7Zwf4i4KW8sbrIr1yyOKqYtSCMKFfWGkKtU+QdL+h5HpT28
+        DtrD+SheNTHyFlZNDBdaaDWrQanYKldL2gLZocxbys4kFuqnAwOfPoNNAMYG
+        A6lUi5Vio4ItVQduLJVxEGqAsNUvP4RrbdohHBfWP10PAeTjRMjcEwU4nkfX
+        jBz/OO0ZfjGoJJjqgLIY7VGAwAyGhAzScXA1xpKfJ0H0Sy9C0PHlGLed6Aw/
+        LucJFj4uOaDwSI3FBHGY9x3mfafMj80O3/LqfvrYhUMh+zxK4Od1YUjA4vbf
+        7AzcF0dYW5A/5MiVNowPNHazKxdHDhSg2Gxi1lfR6+zUFo50Cauk2iyDMS5p
+        eWfCr16+qrBfpKPRPIlnigp5bUloIBzxLzJ6GoQJgNuQENKKin4bg8+xrwAH
+        Af5H4U3aSb4jcAKkkAA9TbXJhEEF4e18qEBDN3zndmZwE1zNb/zvoYIsGAj8
+        h2uIFQ61Z3+ey8mk3fZ1ITjDPsE/mDmHM+H207Q/iUHMb7eD9t7pyas3+qrX
+        6iT7ijUSuOy7nl+zsxN+6t9Reh0P41uGNd02oCMNJtFsfm0RED21xwbkoT/P
+        +S7i2e9QVYm7lD/9qQrCy3lIDzggesiN/5ompnQou2g2CfmbsWdHMKQLvauo
+        ENDFafAuvWagj8pBaJNQ0hxz3H55rKGm25q5cUpIZjAMe6m7xw2+FIzmN0E4
+        neOJ91OejtWVaIrdOtm0q/9YYGFiNzIf8yBOBjHry1VROOROjjiTxzRjnGni
+        A8wzwL7LSQj+x582BWkwiyd+kRitHjJnenrpNARr6yRnsa5TzKkfTpghfZmO
+        JzN2Uj/s2yCG88twojWdzYNBOGL66YIJcx5IWKu6QyCtFaTgG0Gl0ijt1KvE
+        ROn2MbZA2I1YKusLpmMIsjihR1ES8XT6zdxiQkh2hfOFyCPQ7HYJj9CasIgC
+        EdXINEJAGtRlg2JTM7dLmuTeLZ9HuMLuBIAsDF6HswkoaRr8lE76YbKZyfdJ
+        R5TQUrlYvahWmhUgokqrUaoTMagRpK83yijUL3ZDV1r0qmb1s3VF8+rhkd6j
+        d/4SAn8JgX+NEEAK/EfFwKd9iodOxkYgxqU/VoWxFyB/AhNnRRA8aOAcwnzJ
+        oUAcRZzEFnDZJghGqbQpiLm4chi/F1llCXFYsJKwWMNgLzyIRmHybjXCUSFU
+        3wKlr9XpWE7yaEP8iLAW5tNhHJxPIhfbQ+Gu+B2CR8rlVqXasEXp4aACBJR/
+        W8ApgB1FUMGyh1PqpWqzWayBptyDpr4NsYqmYXCWCtE8wrTBAof+lIMrWWOr
+        5lR7GqOQFV0VZWoo82uCVTUN0MpJF0tIOgxtb0qR78WMiYFpUUV8OcUMiCdG
+        2egkRzEG/ztux6IPh9gTBHnAu7GrMPdxCfIoz0vAP0K4gP1Qqngy113F77DU
+        oiHqXw8072EPWye5REu3gt58NJY1JGvDTSVWztRTRTrJkjp9aBoyjdrZ6szL
+        TLtaCavfBo8ffXsa9ZAlavsgSYfqMbp7+u3jR8G37ip/x9ZmWnedcrTE/nIR
+        nxZealXwbxl2TY2YfLVUrtoaN+pF0JAvV7trTWZACwZ7qVSriQLQAmhp6EkF
+        wOa6WD6A8+VWeRP099Oi6vdM7kbibHmB8mXbf/XnQk3WVuGPkHDF2qYSLrty
+        4cEBy9YqYKjacWVitMQGy/hyQpbvgrRvITmaQHmFlxIG5/G0l06SeCEE89bu
+        wWy9BH2LE4eYwE5/Pp/CMwpvb9eIYgSLCTeXakj3VTz2Bw6mSZDbMbHlIG9p
+        V/HBc1A9DH0saySRHClwuzly5gZ5hR3fm+NS4AQgtHrpjXNW+H8vRWwEjh+l
+        VpZYI8Z1KHSjzpM318+n3b1XL07fiPK2jvuWauss18UAclc276vijY43OMdN
+        WIJ8ia7mmG/LBn4PpXRzPsrzydHJh0EvPjl5Ge80P4+PUv4YH2VpMjI+ytXP
+        X8hFeWiKNyOfLPXk2SrjxNNQ7iOfwBsN2HW9EO3kPDnbBdoxgzlbWwryT0bf
+        qO9Wq5se8Jo3dlZRUY5TkfgrkcULmGBEf+AYQHiQnXInEPMiTZKb4AX2gtet
+        uLErhsqisVXb4TRKDP/jkKHCmU/nZHMacbzbRyengYubZKDpfQ/KA63GYcJE
+        mgTfhbes1EECt3cuHD4N9qLgfI4PfLuZBr78aKhD/Gv45xUInhYTq7TKjVqr
+        DhGk2UQyEg39HaGOtSaz+GutSRisBem7QuC1WajAKq0XYMbzGdofsJcw92eF
+        OghKK+YNF+6UCGuw//LNmf7cg2u3f/b64PTg/E1wBhHvJNgN3rI++9NxTNxr
+        LqSHCb3BRvvI2pkRWDhEbENL1noOou2zfIG27fZrGcWCsGh0OL8ljiILCjwV
+        tANIi9+Rw5NwLluycBh3sQBH0fZqP9TSVXhrQF5sSI7rFPQv0drCABAOzQE/
+        TP3gEqAjNwwgqCFbbZthpNeGJc3CUZfDbf3QpcjabYxWMBPs4m3toyjYDmBb
+        g8Ol7/gPPK/YegnGw88CJwACNnAVjwoxXK9jQkVCXrjQsYzpHHsyDRZTEXwf
+        Tef0lh1ueFOKrgL4wlIaEG0SIEW7PwbhVUoL237y8znY7utZM4JQIJGY34ba
+        GY42F5LECNQHZ1ODXE3gZ5qu26Pf25w0hr0d85gpylXdZojb4dJCXEUTLrKx
+        EWfFIBd0FSU9YFU7pMzUNr9AyOUD1CS98KpUYw4TNC73ZJ3K5vbGmrFpZv3S
+        4HKIgTCI1W86ubxNsvlSfwsBmCDPSNJRd2J7SlPHx+0jeECAb1v6lr52keHA
+        pQoh2A1r2/nGfzyYE/fVXf992Asq26V693+Eqq1yB89PoCNAJzVqkogg7R/e
+        HEBV0JGBU3Bw3A62X7/Z3+MTzw05OBV94XD/LZQGOUW6MrsUJpMoTFCW9sQ1
+        0dFTw50tPYae8L1cGt3y6vDk9ADeyT481ZMzSbbKi8rqj43iiUs77SNScSPT
+        2e5fEqp70fkcifonM51XJfKDpvMfn0WBCt4QRVhcuWRjky5RbKI3nY3daqF6
+        y60arIXqXf17HL1Pg9N5fIusiVGhQ3JhMgoUYKxr6GHzGqLeMEIoRGRPxJOF
+        5q6ibAiE1irrRvV5GOFYJ3GEHfzoxEUZOEsvcfh7UG/TZ+x7UIGQfzOXnU8e
+        EwvRg+6xhzEqFllfi8fmpnB+4/12cK2+sIPrK9SHe2YmsxfcIGZTUPV+sd/r
+        zLvdQU95IMMIIyEcduej3eDXs+9O/vFbACUbZkrgboFx/PfncJGMVvw8TN7D
+        AyFcg+hqfDyrq/9JqwI9TrAW8BwbolaEP8tuFq2LBJJKQ3HdL8bT19rMHHt7
+        EmtcrZFIViGfC8ZGFRJZqVCGNgeRFOYrmSzNu979Z87MRsLqI0uykYTK7nc/
+        bSmXQbU8DOAzyErVPwGWubYw/1GBVWlt5jPUd7MrV30GKAeOitO6KNcwhZui
+        JorKeU/a13Hce58iOf4Bu+rKiMELyuainVV34R/Ae9tEdW8CrB2Cg8F8Fl4F
+        72HUBx8wVTD5ibglwSVsHH6EQ6wx71I8s/33sZQ8JfvNBRffT509SrvaTVkv
+        YbVXaxweMqxMsH6cTF8np27Tmc2uzGe2Spy81Sw3a40KLCJibbge1RqYbpF8
+        vhUyvU3g2uWrAfOzq3Q8BhIlcSCaoSoWcfNzLN8+hvZrwsSRqPiwaBnXp7NH
+        k5Skr84TucXcvwPLeh7tYEmmfChbPNpx4UyyWjHwdmbRTngzJ/DqgABn05Rr
+        7VKyE+7Iyp2Ek50+KaOTFJrrnaF6QEisEaKrvmGPMAeLhqMSy29GM82hnNTc
+        Hduuk7TVBKbvHKs9554QoXcha5gnEaFbG4QPvc7YA9PPfC4mrixxEdAxSTHs
+        b0g2ERROEFtaA9/CqAP9eW+pG+YCTw3V5nv8lXdzNuDSBYIfaGQUTS5lkPO7
+        D1QrsJ27AEmQ9uC0xZOCAdFF0Cr/s1TozNosHuY+z7nEd6dPfVwmuTmEwIGs
+        iJW3V6bQ50XPOFzi2Sg5FRveYuwMLupFGPsKcKsNGotwOAD7ZizB4hnbZM9g
+        JOAlTS1Ujj/xC/6Tcz5kmnt+fkumA58IHcCxsCUsvNYUKk8UGgCxe5wPvBOG
+        sNrvlRHFygk34gSejGYbf41nTef6HbcGR4nPruB/0J6eLydyGONi0K7xCYas
+        P32NI5hFtulmMnacb9FNh1OIDlAjxG8Yp9M4i9rTdX+nGpymE26GgOCm/w0f
+        XUe32cZVD4ggiMO0PAFalGwr5nPAFLsuQzqK+3h3+XyJ4EA/ccFshsVL12BZ
+        hp5LeShp9PndUzI2w4n6Lp7CwK5oZT0yGhW34zbLZcS2wROHB5MS7VSMR1wS
+        vsElH7IHu8gAzE48TuMrzOFnQYuUf4jv7jsMqYKgD1tB/u2In8bJYKeYj2s0
+        FBxJIz3QJrQPo3bwKI/qbGddG2cHVOLqynaQO+i2FbV+joPCuMkiS8z3z4+3
+        n//XqWbQnNl3LKs20jQcMpnZKmvSoKL4BkPW2UaoMTh6j82AQ435HAEBCsDZ
+        hrfDpOrTLuupAQ5tfNkdFgszBPFFqqSUU6GKdoTGXurgkrsDSMTLnSt76rVm
+        brEKiwW74om2G9Vf0A4gDkNUsvVy+0oH1m1tSxeMSo6nZK3b3l9sASAO7oUR
+        s5CJCuwZ5Uarly+j5E8Mxoar7zASj9tpQiNhBWpcW4CMGts0LLEtEpmQoCRp
+        AbKM9KYTVwhJNlq+uEhfYInBBA2PADc8MLuPL3Sm8fh1lkovSNnJmT9+d9uQ
+        vgoO0yAescqMX10AGiB8YBNpKZoz7AH3cL5leCOEEnrDiTxEA7vHnb8WbCUD
+        F0jX5ybbWzqctovdbjONp03gBaZ9ziQD6/gZ12HihEiuapUQNlZsgh7AOjfq
+        D9JMHzu4hojpQhHlTYxSdXqdKXlNx8VKzuU4zpkXAeAm65K/jOR/7XbBpQbG
+        IpFLN6EUABIW5pWy6ViXjATGxkHgEqS1NdTwvJgMrlwjXQ3Ssak0jyyNIi59
+        a1fihW9ZWeZCFpqklmSWBKnkqejT7AkftTWhKSyJAySGWD5QzqfkULZWMjKY
+        N3U8m1SdDmmFoeeRsT66wDBFaZ+QIUX9VE9EaIAAmvx3c2MrbehkVHKHL19p
+        9ucQeIzu0KcJch+Zciv4k5oOgo8IBZd6GD3ZzfZBP5B6gmXFyFbEHPvGaTIE
+        3DsT9va1E/2SETa9wrQgAzq210RLxFe5hhoKIkUy9DO+mMkqt7OCRysyzT7O
+        r4OrJoHKZY9tB9qR0KnWRCFwDUTNQESWfGlRmPd+yImepF1JaKerTV1LHXJa
+        MjUlKaNFYq342m4zHoBj37nZPuRpKbji4mA45VPqxRL5Xh4BlNqu4pk0kCkM
+        4ydCyzeTx3iD/mhQqMNmUPOJ4HFzhtBArEtYOOTSdHREr5xO8eoqYmSoAy9k
+        3FpgtkCb0yg9eXB9iYwmOEi1wlI0HGQnAv2Cr13uxbjaii3s5HVCbuIVFJ4Y
+        yeTIjBGn/Nxx41HLZ82kFDIqvsw4j154arqRySSZI9w1B0yA8SfEjHaSbMje
+        WqjXxcZZETecvinScUqdmIWoYZjOXtP6Xsk2kPktyqoo2CitS/Ec4UsSAqXP
+        wKy2mksMylxWZrvFEF/ZindkVEUyKtPedn5XVt7r7hl4+5TtJA5vTp/ULnZj
+        dYc/P1YLKS/bDZhKHVYMTzo7X6FP7bAH9olTF2ZsWLop5riatcePJOEck5P+
+        Lp0P4g6SUX5PIxe9cNApXT3jmIvOnnOyIpswd4oRPzphzv6KgeASd1bt3NiJ
+        WB3UypVOFJhxR/M6JV4ciazBGXPr6ISWiWeMOA3KHeF4IvI9R4wH5uPXrPvR
+        W2BPxF0veciamZtYREB4O1G9t3VYX0Wtej7c3G+psjNO5Sz5uEeEMylP5ZD4
+        AVvduRp9+1RnSaOnt7JVTK/ykfV8sS9yB9FkhHGH0CQiHLldlBGTpVAYzj0d
+        leL15luLpRfP6VHm3eVujXqAlsaAcM/u+eb7aM/H2+rqaC5LLlf1GCmeyuRU
+        Gmv8cA8WO2NNjTglYQ1QicpmzeJ3zmlzAmN5xrAdH+iktpSfETdGBsFOn2ON
+        KWy0+q07Ts6LcIaDCPWwz1G7Zgk4I9PWaeGtymlgo3nTEVswt+0lu5dnh7BK
+        uKBDZw1J09Arx/8KJijqxJViUKu5k+hawgrHNNR1rKhXHFfxGDnGCY6TkfAe
+        2ZmZ1lp4zjV2IIFoR8mLWshZ04SSdHZmcJdwyZ0GWp0ytukLt/0BprrOYHbb
+        X6JxeXY5J4ZMOBvAbHQBLPIHyG9eOLDb3gh2bjeD+ip4/fDBv0dfajsjapZc
+        sc9Wheg8S8zJtWEsg9HpQ6Xhe8ChLsBBkbt7TZ5MKmZbMsVOt6sx5F381svy
+        fmRFUQYVpSmYebm09wk5cp/kpMmXMV3AGxbgZfOYBCj1KWYbAOJAeIWzv2jB
+        tsDKoV8+hx4IuPeQ8STEiaE4tggLadmPyBqUWwGvUh6WZxItxqNnrgxnGcfg
+        xlh6QyrUbdU++wwfJZHSf0RoBZsZjpKstwxucRdum3Ze2lpKH8CdJiaaa3Ms
+        wD0dEm+KAco4aWD2OFOo8lpup9re1lllpyhnYxWj8idcdtKQefWm3wLhoRfs
+        BaydOxq+wXYwfoBtHYxQnChZjyPWTEJJ2sEUXfLaOfX+Gn/GDdfo0lXJIJYS
+        Df4oDzT7wZjMV/aFyewkfewMbp/dYbH+69gQG9EIcKsyi5rETi83TVVaBoxT
+        Ib5zGS6UC2SExVCPwgP3J5x94HtMBz24IvRApugS5sSBprGZyKiBXTbIDuQj
+        KRsLZ2NkG5ziUVOBm6ZywrEBLS5VJ7mGeWpjzbv5eBF6526gHBvy8jik7n3X
+        5XQo17lrW25uiUfRVNvaqLRmAVhikDpPp8z7dZBmJsEca1e3H4cyO/tmDWvf
+        MqF5UhEyat0jbUo0mONsA+O8oqcFkf7CxtMWeKFlyAAzZf3x/Ic8K7vJMxUy
+        cMdZAczQUsaNrAI9bMSIBH667CXEqzfV5CZmGwJvmI7o4JnysEu7lJ/zZ3qB
+        jfG5nwVtFaZIrofG4zWn5sepinucvhN5uQ4eykwYJ98HPFt4wWK2zSJ+QFGz
+        l1fVDojOMtKTDdMmSkpjDszsFd8joW7O2KNSI5Yb8Zb8WAEUyoa4VVBlRWE8
+        ZC45wqS5zX6287yxx3cEQsvUqgwGN0NTuKJ3YhJiifsDlkGUD19s/ooz35xJ
+        jvxyWpTD6cSSBkoWpxKyhLnMM6AZeC7rCUJpgIkDlcXbFRkpZSnVVE6mZYzp
+        BBliKrEt+5XcQFbzK6emgd+/kCv4o5V6Kl0+H5dhle7PrzYq9WTRm4ciWscK
+        3GQBLSq7UVK1RO2FjaJZjY2jWf7KtfKQ1QaxbcogUtO1DGe9AYe9TLGi+j38
+        4UMw1eENUN51ZITYW/RCKG7fKsOQElO+yTsFXtGkfRVxNYKh8hcFMfEjDJqw
+        lslD5XiQZcoM1KzkK2bCcC4WmkqWwmAYjoNF5oGIoEADfAssZJoRvzeRw5w1
+        v0RXfLjvGQnBVY850EYdBi8ookf+woZFKO/UsVrUiHV1rFrUXWhULuCMFCkL
+        2aJcFZkCFRWJKbeUJfA7UsHX2vT5eeufrmfoPTTYe9LzsO4dkU82mVS+M6fl
+        rSsd8wY6SYgcE67h+WC7j7VI4L5jwSPTOc69j4u9A+PHOEV3CYxGkRgUxMKm
+        g1jk0k9nJdzb8Y0YCeBWcUiGOMtboOauLW+h9CegHayt1X+UdlDakKpc382u
+        XBMnTYixyoSqXFRF/6pXy9Bm2PD3UJW/j0ejG7yGHkjmWonovJW1/CYpj6Uq
+        s6IlP8Dz+QyqfT38uX708230tnmyE4tqX6uq9CP//VTpxyFeHCZQAfkDPCjm
+        5koVSFU1m+KFynZeKg6Jt+RrPJZffhgrJi9jXlpJZSXnhMDCvoUh9KcqtmW/
+        F0lecp8SrMONeaDUnSpdkwDWefJT4+/TlwtewcvUWbUVDvHAEtcBtN0nDoMI
+        AcFu/QdSnw4b1JN04KHCQs+NsefwaZQHjnVMRoeVaFuUkl4b851I//4vKk0r
+        4W5wvixTn6gm5Jf19REKodV9IRIGeiEylrsuE6JPhh1hSnBPKi9fRlg3RxIz
+        WEyYeWb6AozMsuRznmf+g8keC104tJqhG8nXalHDYoVJB6RN9EcWhbeQ/DRQ
+        W0DOv4ZOj5wtOKTw5yr8T1uyt7e/vJTkl5Wx/qh98cXpl7Xd2oYCYXHlQiDA
+        lKmXivUKsqBcg88GXZ7qLLV7khZERrwB/Rxhqi9KxuX3r0oB6EoWEtYipl89
+        2g0eBX+zUNU0+Nso7L0nKAK4CBNQUezg0IJY3Xgyuwr+797e3qLe5yiNC/iD
+        T3q1qEIFgcfSP3fLwG8uSPY+vKy0K5ej8evpi8vjzxIkqisRFWYf4hnjMjFC
+        6WZ/1q1QbS4Dmq3s88VnlK2wIeyUHpAIqyNdSIQHpmjlQLt775zj147BFbxO
+        oZ7cBP8MzgFEVKgJ0jhMd1bon8HZnPpLkxm/tWdUPOjCBQc/+CdwB3akasoH
+        7dcHuk7F3Rl2j9Lj6fgGRskV9Zp6jylXqZoxqll5lMZ8NxkXBLeQrkT8cBvL
+        s1fQqn1Jxs8fcMrOWT4l3qgc7iGxJT/PWSX4pdUdum8dy46ypdCJ0ZOUV6tC
+        g/wUg42TtmGVpcWVD59JCgZW4Qn+3jN5mBLNOpMCSaABYo4rBVuOHfBeF+hi
+        GvX53ur1ChlBi4/lNQ/fa7IAOuYzVfMd/XWU/zrK/6b3PnxUYf7bjvKmNN/a
+        AzRfkr9rVBFAgFxQ6q9O8YImviXVX+450WezaBDHxnMiQX6F5btoZlXV7osJ
+        aUwj4DkjQGKhAUMqaGsunX6fZjF8KviIvwCIQ8wBg9E8winRJc9lcWwaRS0d
+        mG7oF2+cMBNs0f4ybQxzykPuKwQKK0tE/lFWikGYOZwvzD8rOmSYsFBTBaMF
+        4KGPVIVJaFBWlEDun/EbSBq2mu6KSSwioo4NxUAtP0vtu9QKR2URTAcBT8/R
+        90bGNMMWgPS5jFBHmMBOvHIpUroStqlhljRxncIK1MigPiErMVEWRqYAQiYl
+        g1qXuSUO7lI+G8aq+u5if0tRGOuyyJBCqi3gLWMIXINfPVjmJ5pCrazT0mAE
+        zKJajWinbM2e6E1C45kx8NecVxIlE+WHwXj0UKYn6mlNNIrugHDGgjkaT2Dk
+        UfgISvLqRnKUAK0C3gP1kHCgDHS1qQZrt1s0QHUsgwg96BCHz0SP+hftTsHa
+        vi33tiF1lX0/UaELg1wtgdBvoJlIdT6SqrRFRwtUmEexMUr6A2VazEcQFwtF
+        YIxtYMQ+Rd7djhfuwd62XZTTTOxD6m6Ib+DYX3/SE+M650ZioTWyG50bBx0X
+        kaAkfZBavDNFozWn0CVJZ3JgbH7WfXExHTrOC3EOz8f0TGsLqKiWh+KCir85
+        MWGPJURihcn0KGpqKfXR3hzgucuswNgRbeEM8Eh3iLGxYXua1LEjE0G8Vik1
+        FsozLCAiQrseRiDMfOhCaC4uMSQ+xz8iPzlpmH3J1caq8qsNJi7P0Uh6ngK7
+        kFJe9hCfc3v61ppnV0Sx92//j3a6Q7eNc8sXmuJlUSfJCmtXJDt/ojUXHonn
+        RC8JZCercur6/V+CwxO9RRwImzPI3DOD3e7UpmQJ3H62AJ+Rbz07UI92k0sf
+        l9NFkZ+Zf50LQRcdy1fM+HHCc1wEzV49ZBEXm8y0O0TarnCejJe/KkRWmlyu
+        xLaq7D6rsOdHar44NHdSbhSt8gu1Vkzt1im+zft9yBOjWDLVjerFBn9/eYbY
+        Wpse013/dB3TXR3yco3PT8Oqa7bBf/4VXGuDfRAU/fLi2LXdTavVLq5c+FEU
+        XyApsMUqKymU8vgUZKAGO+97u6ecU3sIWY+Nvgctjf3/Wi+2m80WhWvzxtas
+        L8VfiWTDDRDoPhFlzSjTEh+Qp4iDmqYBjdpC7wiK0isJhiH5y4+cEFY1SjO2
+        SJ4H7bPce7WluKSwNk+74FhRF0so4DzxoWqksauflJNPKfjoWXWSXntAJaGS
+        PQDLLCPeiMQZpygrH9HZwvYSWDehT8aJ44mXEHpk+dAtgjbqHTxnWU+Wyp71
+        9KH38n0GIHPw4n0Sn/24//cfetPhZwEygjF78y6qvAvpl18z1OUuYCu/FbQ1
+        Q2bzm1bwm/z7YXqZ+oDhfQldq898QkaNXqcDlms48JNijchjo/MEc2PHVpyf
+        UrUk8Si2udOPduYJOVt+yp/8rfDmp/B0XBv3Bs1e/q7BBQC08nagf/Gz78DC
+        K+3fBYahlUSYyq4CkEqlWS6W6q0Z5AqMYgqlJBj2hQgUaakOBQI1YUA1SK5F
+        /C3HAE02TWV3f5+SkxWchgO9SEjvJBoKv7Y8DVM/bLy82LGWJvOOhCnjulih
+        AytlodQmcoqsChuWoAw5YwVZ575j/6ue59toAp19+l6MGD7P+sXFkE0mlIdw
+        8W29nc11GbPXhiv2jwUw/WBdLVkx6GUG+OVUzYhrlYhYalesYOwjA+hlg74E
+        kf9TQc9neu3mhd5wiekENCsk0b1jkVdj8L4a4cGfhLyqG78BaXHlWlyKAtwN
+        yg7WKKHTosZxq4LXTIb3fW9AwrR9wSZDZqnynljE50o7W3GY0fK+vXWRLcY6
+        zleexIgENOspox55xhAbBMa0+DN4QZ0t90Y0Mwc9G8XtX9uqyhSjGpZlzFGh
+        JKIWiRxx2yTOPWyZd0z0m82Mx0FLSmvLq3FLNCN6LbajZEpx1MN+nNUmQRNA
+        zwMsLwTy4ZIfrPoHdHIeoZIx2GEdSPU4MSJpocfEi9KJ5IR0kuwpXbOZZa1z
+        cZY8sq/yzkY3dalW7Gm8dOVw+MM87YjRJsYz9zNNY2820g3TTQCGl6r7ou+s
+        NnEnsRQsrpatyrlJp6RV8kxUGmoyNLqYKpf3lIxEV4gyefkgH9j4YzfySRgN
+        hAEp1z6X3aj6iZiKbj41RZo1ZROQUpGImOSMVWP4dRIuZWqWeEnSzWoI+jP9
+        w5Ux4MFag0PXSSzfyfimmjxXzWV5pto4jq54cidZJM8o+Yb0NVT66kAW6Wfe
+        /RSL3l2XTY/nUgXveDUHz7/xJC2bsy4E8R7XumkAUTcXTeG91Ooym79mlNys
+        ZrTYGMr7mrq7FEa3LBXzBtxWHCsU4AfMRZb9ZggIdX60LkzNyVWQuv+n6dXm
+        W02OCJ2yFfAkZ4dtIAtxV5b2Gy8c9l3u8zhih1ZCXAmADnrhNFlD8r4Mgokm
+        Ijs6fiWhWjVmeIdx5eAo9d2EaMgOxaFWzeSWq1Y3m02oiFo2vewsXn/KpLMp
+        3I4hIRoS+30zoJy5MPjBl/0uSY0vjYetQmQSX4olMf9Lw7FqSd6r1SBd58Sv
+        NJfTjrZrQyiRZXtee8iNvauUWXqGdFNTUyQLf2Z8KkteysQEjcmh94djMKeM
+        iKfZhCgzau2lrnyQ6KhAinziku4kJjL+qW0UtS9h4rqk7rgT2UHoYHUiE0jp
+        hE52zwYhL1onVrubn53E515EvxAmd0YPAiQmUcup0R5hJaSLUVLRpu4xImN2
+        ElfZHBwGdFIM5m0MaGUKbpMVJc4nUyxyJzeSYZqzSfVmER47I4HQk8QV8w63
+        bcpI03DsRkhNxs8EGNJDSMGx9rAB9C5Ol31mpF2xTlVsyy2ARbtNEI/yMunj
+        8BttMa4glVU43K3mxQQrXVOaitzlVfXhhIs/b764vM6kQaCUfBSkYSJAD/VL
+        rR95K1qi7DvBMAbNTeEE4IEokc/d7Y/JNXIGTM8AioUS6yBQlpihKv0+Ce0q
+        k6EjpXCxlYxokKsHVzM+V4R6TRzDWH7/hFBdWETCGjXP5jAYWMHR1542aEgY
+        Kv/61wQ5bAZ+KaYHx8HyaHx+lEA3hgTKqYzD3xvwbU8HZ/N/7B2W3v8Unb78
+        vCKNH31p6HUjbnb/8bo9rh1kXsQXF2mUJ3PvC0OXHiKe3EYvDF26Z/OajXtu
+        hVXxXqKXt4ayrQaoNfYnv0EoVqEkgr9Yh1byaLXu1z3WiFDS+4yR3OJZ2CKL
+        vfZpUyTLvVqzRDxVfd0QcWI1t0O+3Or+I98dWt2tblhddvnKh+tnoy6vVHdQ
+        efZwL1dsYliNAkEowbhc6cdjHuewcuPbRdRbbxSlkJpe4EAB2+Ub9AZjvVkB
+        iEE1o/NbGlBIKG9bd5Q9X2C7siiwbS8p5dXalEni9TqNC3rT1Au4eUEoFVvK
+        dyPcR5DlKem9F8nIX9TWXmtn1b43LrLxlvPi1lQMBAE/xJqboRe8PDdU3EHD
+        CoU59NTRpfSHYmI+SeX+JGvLcTbfFOuR/G1VFrGqu84t4Ds5gnn2rVMmiEBn
+        vZIGrzgVD8HGkZi7D2rA7oic+xzyLgzhCnrvvMMZiNNdRjvYNOEs3LFH8seO
+        679ABgcz8QEu8I5pJj7txuFOlPAmVBI5UrGrfYUY54PbBC31fzEZzi3f9Qnc
+        R7SZ2eum8mjYG5UWeLTmvY3vMrzvAA2rI7uLNKz47tnUph4ryPop+2FAfUrf
+        F2wd1QRAQJlR4eMKMonzYiEKGmNPEibK1igfI378L7kbfw8mIYMlCyhqUh+Y
+        AJJeqB+z6+1tz88Tcvelry3+A1gw/yKHf9MqTdW8ntPDHJcKQqZV/t28M/du
+        arb2t99++xdR5S+iyv8ioko1f3nY9tZ8zHs8o/4F6LPqoEthSHGUGufl4m55
+        ceVaDWveO062A68uuKCYYbPFC655LzZv9mvdVcxKJJWxCAgLCIc7CbcQn2PF
+        2Cjn7a0BcArO31oyP2Cq1WIhO1kmpSgNOSxHNMLS4MlrVhoYfqNC+ryA1OFH
+        sJ53ldZsARFHUlbsUYyI7OVTTgcTiV2oI+fpW9Eq2KxWUQHX0ipJ5I9CoZHR
+        rJxcr8OUlpvsq9fKgf1or5c7fU+fi0tdhlG51GVMFFwzMynU5S59zp6Pc4pP
+        ySsz1WvCzd49pPPkZOX9DvrfwM1d9Pp3u05712/THy4PT95dTE973392aIYq
+        mQWWI3OORhYLwSU0VFEEeV4Cn/26oM5mn+gV6s0SxEferV75yPvis6dkYRii
+        MJT944X0cIa1U+bJTdh5chgSgrF334WznXyb7NicU0gPM2kx5xhLNt1EafiG
+        6bZCfHpVnaZ7Jxru2I4kguNmO92J1UAvvVKEB0tMVeoWllW+Q//g5b5jYfmZ
+        uWNaPdAhlfP2uOr0Gxy3FOSYDcqngkpUXFsDsP2J0aUkbuVEGxZzlo4sRUTW
+        8DchBhnQl05WZoQZYAAu6+hhWGysg04pyEIeUlzdu1BTfRK6ByvFPOZgKPRI
+        enhy94hYx7RaKr2tdhWDocN0D5RXmUQKFjjOzzeiX7AvFGbdtvrSL1ziqCzG
+        lUMGzqKSZHqyBkRGLANxG8GEFov+5T7lH2DYfXESQXW3uGH15eUrH/RBP1c7
+        LJzF0pKzuJ6bQK4Sr0q+J3b/4rNyE9o4Z6AtOek5wCe4Ck6IfDh+UpwOk2ew
+        wyFHZ2zpZ7t7f1mTf1mT/6usyeKGGQwIBH+lMB8qAiC69V43MBhCVdQI3t0S
+        hWG623nSeQLWMr7KSQ6WcfeEYq8gVs9+fmowi3srh8L4Xw9jiiE9Lde+Rpr3
+        oqdmEvAOr2b964uLrPWnetF9At/kX/AYwizxMHsMrynZ+u23/wcFas25ZJMA
+        AA==
+    http_version: '1.1'
+  recorded_at: Fri, 17 May 2013 20:28:17 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/100001615369191/picture?redirect=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Faraday v0.8.7
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      access-control-allow-origin:
+      - ! '*'
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      content-type:
+      - application/json; charset=UTF-8
+      etag:
+      - ! '"91d96551487aa494979ca05bfb2018e5a4ceb4bc"'
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      pragma:
+      - no-cache
+      x-fb-rev:
+      - '818929'
+      x-fb-debug:
+      - uPKuxHu0REGv/mNSD8pDg65WobTGSXE6w6hyAuW6nDk=
+      date:
+      - Fri, 17 May 2013 20:28:17 GMT
+      connection:
+      - close
+      content-length:
+      - '138'
+    body:
+      encoding: US-ASCII
+      string: ! '{"data":{"url":"https:\/\/fbcdn-profile-a.akamaihd.net\/hprofile-ak-ash3\/173113_100001615369191_1659041508_q.jpg","is_silhouette":false}}'
+    http_version: '1.1'
+  recorded_at: Fri, 17 May 2013 20:28:17 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/100001914544219/picture?redirect=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Faraday v0.8.7
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      access-control-allow-origin:
+      - ! '*'
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      content-type:
+      - application/json; charset=UTF-8
+      etag:
+      - ! '"6f34266cbabdeea0704783dd9c0cca5c9a299f30"'
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      pragma:
+      - no-cache
+      x-fb-rev:
+      - '818929'
+      x-fb-debug:
+      - F5r7sAD5hbbvSt79LdDOANr5zfsqNcVtKcSprpFXgTc=
+      date:
+      - Fri, 17 May 2013 20:28:18 GMT
+      connection:
+      - close
+      content-length:
+      - '134'
+    body:
+      encoding: US-ASCII
+      string: ! '{"data":{"url":"https:\/\/fbcdn-profile-a.akamaihd.net\/hprofile-ak-snc6\/186258_100001914544219_864707_q.jpg","is_silhouette":false}}'
+    http_version: '1.1'
+  recorded_at: Fri, 17 May 2013 20:28:18 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/534429116/picture?redirect=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Faraday v0.8.7
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      access-control-allow-origin:
+      - ! '*'
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      content-type:
+      - application/json; charset=UTF-8
+      etag:
+      - ! '"d87768dc93c6b131ea011a3c35399cd4f4f1dc47"'
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      pragma:
+      - no-cache
+      x-fb-rev:
+      - '818929'
+      x-fb-debug:
+      - eCS9QW8p0seeR9e7hDwCSrL5Kd6tLj1swqUuq8EP6cg=
+      date:
+      - Fri, 17 May 2013 20:28:18 GMT
+      connection:
+      - close
+      content-length:
+      - '131'
+    body:
+      encoding: US-ASCII
+      string: ! '{"data":{"url":"https:\/\/fbcdn-profile-a.akamaihd.net\/hprofile-ak-ash4\/211622_534429116_782828313_q.jpg","is_silhouette":false}}'
+    http_version: '1.1'
+  recorded_at: Fri, 17 May 2013 20:28:18 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/100005257836394/picture?redirect=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Faraday v0.8.7
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      access-control-allow-origin:
+      - ! '*'
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      content-type:
+      - application/json; charset=UTF-8
+      etag:
+      - ! '"ea0ab2bf29f23fb48c14c34aebd4ec9c977b0a27"'
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      pragma:
+      - no-cache
+      x-fb-rev:
+      - '818929'
+      x-fb-debug:
+      - T6XeIyYg6lLepyzVudWb2R5CVmtnCM6UDgPfE+ivI0c=
+      date:
+      - Fri, 17 May 2013 20:28:19 GMT
+      connection:
+      - close
+      content-length:
+      - '137'
+    body:
+      encoding: US-ASCII
+      string: ! '{"data":{"url":"https:\/\/fbcdn-profile-a.akamaihd.net\/hprofile-ak-snc6\/186431_100005257836394_383607035_q.jpg","is_silhouette":false}}'
+    http_version: '1.1'
+  recorded_at: Fri, 17 May 2013 20:28:19 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/100005945190209/picture?redirect=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Faraday v0.8.7
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      access-control-allow-origin:
+      - ! '*'
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      content-type:
+      - application/json; charset=UTF-8
+      etag:
+      - ! '"a39e49496009c4603e2334ae331ed858bcc8607b"'
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      pragma:
+      - no-cache
+      x-fb-rev:
+      - '818929'
+      x-fb-debug:
+      - +HHDcBOPDgSkvXa+sMbxIi1t00QoFUQ9FGqx0i72sJE=
+      date:
+      - Fri, 17 May 2013 20:28:19 GMT
+      connection:
+      - close
+      content-length:
+      - '137'
+    body:
+      encoding: US-ASCII
+      string: ! '{"data":{"url":"https:\/\/fbcdn-profile-a.akamaihd.net\/hprofile-ak-snc6\/273544_100005945190209_533271104_q.jpg","is_silhouette":false}}'
+    http_version: '1.1'
+  recorded_at: Fri, 17 May 2013 20:28:19 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/517856620/picture?redirect=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Faraday v0.8.7
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      access-control-allow-origin:
+      - ! '*'
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      content-type:
+      - application/json; charset=UTF-8
+      etag:
+      - ! '"8ede4ad16932524a69ccffc71cece4c0a80304c2"'
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      pragma:
+      - no-cache
+      x-fb-rev:
+      - '818929'
+      x-fb-debug:
+      - 4l+GnT+NxY2cgZ/2wZGoEM/WqzO8zRramM4oBBG2iR8=
+      date:
+      - Fri, 17 May 2013 20:28:20 GMT
+      connection:
+      - close
+      content-length:
+      - '132'
+    body:
+      encoding: US-ASCII
+      string: ! '{"data":{"url":"https:\/\/fbcdn-profile-a.akamaihd.net\/hprofile-ak-ash3\/173765_517856620_2090281522_q.jpg","is_silhouette":false}}'
+    http_version: '1.1'
+  recorded_at: Fri, 17 May 2013 20:28:20 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/100005499191439/picture?redirect=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Faraday v0.8.7
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      access-control-allow-origin:
+      - ! '*'
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      content-type:
+      - application/json; charset=UTF-8
+      etag:
+      - ! '"066b754a9b354467ec4e66e376d5210798a88b37"'
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      pragma:
+      - no-cache
+      x-fb-rev:
+      - '818929'
+      x-fb-debug:
+      - j6ZieJt2rRkGINE2vRWUe1QnPgExOO8bItVhaqeU1Z4=
+      date:
+      - Fri, 17 May 2013 20:28:20 GMT
+      connection:
+      - close
+      content-length:
+      - '138'
+    body:
+      encoding: US-ASCII
+      string: ! '{"data":{"url":"https:\/\/fbcdn-profile-a.akamaihd.net\/hprofile-ak-snc6\/274355_100005499191439_1553242471_q.jpg","is_silhouette":false}}'
+    http_version: '1.1'
+  recorded_at: Fri, 17 May 2013 20:28:20 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/125408820943567/picture?redirect=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Faraday v0.8.7
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      access-control-allow-origin:
+      - ! '*'
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      content-type:
+      - application/json; charset=UTF-8
+      etag:
+      - ! '"1f01b9a49a241cc66f71f861e0d51e2bffe388c0"'
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      pragma:
+      - no-cache
+      x-fb-rev:
+      - '818929'
+      x-fb-debug:
+      - KBop5rDMLSotrAyeYSbABo3EmzlxGPjH+5qYOT5L8Hw=
+      date:
+      - Fri, 17 May 2013 20:28:21 GMT
+      connection:
+      - close
+      content-length:
+      - '138'
+    body:
+      encoding: US-ASCII
+      string: ! '{"data":{"url":"https:\/\/fbcdn-profile-a.akamaihd.net\/hprofile-ak-ash4\/373171_125408820943567_1866632478_q.jpg","is_silhouette":false}}'
+    http_version: '1.1'
+  recorded_at: Fri, 17 May 2013 20:28:21 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/522201212/picture?redirect=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Faraday v0.8.7
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      access-control-allow-origin:
+      - ! '*'
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      content-type:
+      - application/json; charset=UTF-8
+      etag:
+      - ! '"060ce9fba83c63d2daae93ad381dcec6cce9862c"'
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      pragma:
+      - no-cache
+      x-fb-rev:
+      - '818929'
+      x-fb-debug:
+      - ANSaPQRhz6Prf2+wTE6mpBv8Obe0tcGjNsUl9pV+Nnw=
+      date:
+      - Fri, 17 May 2013 20:28:21 GMT
+      connection:
+      - close
+      content-length:
+      - '132'
+    body:
+      encoding: US-ASCII
+      string: ! '{"data":{"url":"https:\/\/fbcdn-profile-a.akamaihd.net\/hprofile-ak-ash4\/186276_522201212_1206559111_q.jpg","is_silhouette":false}}'
+    http_version: '1.1'
+  recorded_at: Fri, 17 May 2013 20:28:21 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/1137533182/picture?redirect=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Faraday v0.8.7
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      access-control-allow-origin:
+      - ! '*'
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      content-type:
+      - application/json; charset=UTF-8
+      etag:
+      - ! '"0b1232c823a6bf75f5036adc39a44b1a851160e4"'
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      pragma:
+      - no-cache
+      x-fb-rev:
+      - '818929'
+      x-fb-debug:
+      - adAysWLvRuE6qtmKWrWXr5R0FKs7MX+Jzf/0i7S6pD4=
+      date:
+      - Fri, 17 May 2013 20:28:21 GMT
+      connection:
+      - close
+      content-length:
+      - '131'
+    body:
+      encoding: US-ASCII
+      string: ! '{"data":{"url":"https:\/\/fbcdn-profile-a.akamaihd.net\/hprofile-ak-prn1\/49043_1137533182_320782342_q.jpg","is_silhouette":false}}'
+    http_version: '1.1'
+  recorded_at: Fri, 17 May 2013 20:28:22 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/100002570042685/picture?redirect=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Faraday v0.8.7
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      access-control-allow-origin:
+      - ! '*'
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      content-type:
+      - application/json; charset=UTF-8
+      etag:
+      - ! '"49d89433352e9b25445be794f4f318398cb467e4"'
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      pragma:
+      - no-cache
+      x-fb-rev:
+      - '818929'
+      x-fb-debug:
+      - m2uEMCaah/wyX7o6Ds1+wNwZRra9ZiwQzQhUd5Zn6XA=
+      date:
+      - Fri, 17 May 2013 20:28:22 GMT
+      connection:
+      - close
+      content-length:
+      - '138'
+    body:
+      encoding: US-ASCII
+      string: ! '{"data":{"url":"https:\/\/fbcdn-profile-a.akamaihd.net\/hprofile-ak-prn1\/573434_100002570042685_2128182430_q.jpg","is_silhouette":false}}'
+    http_version: '1.1'
+  recorded_at: Fri, 17 May 2013 20:28:22 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/1150608257/picture?redirect=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Faraday v0.8.7
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      access-control-allow-origin:
+      - ! '*'
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      content-type:
+      - application/json; charset=UTF-8
+      etag:
+      - ! '"dbaa5df3293f929316aa325a365ed4b4065fcd78"'
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      pragma:
+      - no-cache
+      x-fb-rev:
+      - '818929'
+      x-fb-debug:
+      - ZYcUh3hrveFFazLMVZs0leMfcBC5d0w2o+WVXe11Pco=
+      date:
+      - Fri, 17 May 2013 20:28:22 GMT
+      connection:
+      - close
+      content-length:
+      - '132'
+    body:
+      encoding: US-ASCII
+      string: ! '{"data":{"url":"https:\/\/fbcdn-profile-a.akamaihd.net\/hprofile-ak-ash3\/624146_1150608257_681843021_q.jpg","is_silhouette":false}}'
+    http_version: '1.1'
+  recorded_at: Fri, 17 May 2013 20:28:22 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/100004037986769/picture?redirect=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Faraday v0.8.7
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      access-control-allow-origin:
+      - ! '*'
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      content-type:
+      - application/json; charset=UTF-8
+      etag:
+      - ! '"66b224a4ea3020c5e20641ad140b73602b2b7142"'
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      pragma:
+      - no-cache
+      x-fb-rev:
+      - '818929'
+      x-fb-debug:
+      - JJShrplU7ecX+/56fyzYW4O38sVQZRNpiUCoGNGeKiY=
+      date:
+      - Fri, 17 May 2013 20:28:23 GMT
+      connection:
+      - close
+      content-length:
+      - '138'
+    body:
+      encoding: US-ASCII
+      string: ! '{"data":{"url":"https:\/\/fbcdn-profile-a.akamaihd.net\/hprofile-ak-prn2\/211880_100004037986769_2134255970_q.jpg","is_silhouette":false}}'
+    http_version: '1.1'
+  recorded_at: Fri, 17 May 2013 20:28:23 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/100001475788651/picture?redirect=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Faraday v0.8.7
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      access-control-allow-origin:
+      - ! '*'
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      content-type:
+      - application/json; charset=UTF-8
+      etag:
+      - ! '"c70784ad5bd3ed7107de1caab1e07240c0351e06"'
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      pragma:
+      - no-cache
+      x-fb-rev:
+      - '818929'
+      x-fb-debug:
+      - oXNKDJJ+2g0QKgCbHVRCPmCXvPFna+dRLTmry5DZ108=
+      date:
+      - Fri, 17 May 2013 20:28:23 GMT
+      connection:
+      - close
+      content-length:
+      - '137'
+    body:
+      encoding: US-ASCII
+      string: ! '{"data":{"url":"https:\/\/fbcdn-profile-a.akamaihd.net\/hprofile-ak-ash3\/49366_100001475788651_1668611883_q.jpg","is_silhouette":false}}'
+    http_version: '1.1'
+  recorded_at: Fri, 17 May 2013 20:28:23 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/100001890070223/picture?redirect=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Faraday v0.8.7
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      access-control-allow-origin:
+      - ! '*'
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      content-type:
+      - application/json; charset=UTF-8
+      etag:
+      - ! '"133b400a9dcdb4d305be31e1a01f06050467d71f"'
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      pragma:
+      - no-cache
+      x-fb-rev:
+      - '818929'
+      x-fb-debug:
+      - VZ8PkN7ZC2TfyeseQLp6HEW6XbOPNtnYFHS35rcGo3c=
+      date:
+      - Fri, 17 May 2013 20:28:23 GMT
+      connection:
+      - close
+      content-length:
+      - '137'
+    body:
+      encoding: US-ASCII
+      string: ! '{"data":{"url":"https:\/\/fbcdn-profile-a.akamaihd.net\/hprofile-ak-prn1\/572912_100001890070223_459048073_q.jpg","is_silhouette":false}}'
+    http_version: '1.1'
+  recorded_at: Fri, 17 May 2013 20:28:23 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/1828610633/picture?redirect=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Faraday v0.8.7
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      access-control-allow-origin:
+      - ! '*'
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      content-type:
+      - application/json; charset=UTF-8
+      etag:
+      - ! '"d83e3e4f28a3861cb381d7c168007677f86c09dd"'
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      pragma:
+      - no-cache
+      x-fb-rev:
+      - '818929'
+      x-fb-debug:
+      - bGH0fOBvgk6Sc+qgKA6NKDbUL7KJe+6n2yYt8mONFsM=
+      date:
+      - Fri, 17 May 2013 20:28:24 GMT
+      connection:
+      - close
+      content-length:
+      - '132'
+    body:
+      encoding: US-ASCII
+      string: ! '{"data":{"url":"https:\/\/fbcdn-profile-a.akamaihd.net\/hprofile-ak-ash3\/173658_1828610633_855468201_q.jpg","is_silhouette":false}}'
+    http_version: '1.1'
+  recorded_at: Fri, 17 May 2013 20:28:24 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/1828610633/picture?redirect=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Faraday v0.8.7
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      access-control-allow-origin:
+      - ! '*'
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      content-type:
+      - application/json; charset=UTF-8
+      etag:
+      - ! '"d83e3e4f28a3861cb381d7c168007677f86c09dd"'
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      pragma:
+      - no-cache
+      x-fb-rev:
+      - '818929'
+      x-fb-debug:
+      - b9d3s8A0npSTE0Yl2osbwnYKp0GqUrWjykwmN8NESpg=
+      date:
+      - Fri, 17 May 2013 20:28:24 GMT
+      connection:
+      - close
+      content-length:
+      - '132'
+    body:
+      encoding: US-ASCII
+      string: ! '{"data":{"url":"https:\/\/fbcdn-profile-a.akamaihd.net\/hprofile-ak-ash3\/173658_1828610633_855468201_q.jpg","is_silhouette":false}}'
+    http_version: '1.1'
+  recorded_at: Fri, 17 May 2013 20:28:24 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/100000175805529/picture?redirect=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Faraday v0.8.7
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      access-control-allow-origin:
+      - ! '*'
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      content-type:
+      - application/json; charset=UTF-8
+      etag:
+      - ! '"ab6afbf95ee5f531d8d94e92d1f442dac4feb864"'
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      pragma:
+      - no-cache
+      x-fb-rev:
+      - '818929'
+      x-fb-debug:
+      - VU2/DF6++V542cQvMzx20j51e8xfGh7lYJS/Gx1CWbY=
+      date:
+      - Fri, 17 May 2013 20:28:24 GMT
+      connection:
+      - close
+      content-length:
+      - '137'
+    body:
+      encoding: US-ASCII
+      string: ! '{"data":{"url":"https:\/\/fbcdn-profile-a.akamaihd.net\/hprofile-ak-ash4\/369966_100000175805529_824043049_q.jpg","is_silhouette":false}}'
+    http_version: '1.1'
+  recorded_at: Fri, 17 May 2013 20:28:24 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/1556057983/picture?redirect=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Faraday v0.8.7
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      access-control-allow-origin:
+      - ! '*'
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      content-type:
+      - application/json; charset=UTF-8
+      etag:
+      - ! '"29c0f3ba8f7140e9c4efc66b5d4312f4a00510cd"'
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      pragma:
+      - no-cache
+      x-fb-rev:
+      - '818929'
+      x-fb-debug:
+      - oADCVUWyuqWQxqOBgg5SEX6GYtBdQSt8Chlrwfs32BY=
+      date:
+      - Fri, 17 May 2013 20:28:25 GMT
+      connection:
+      - close
+      content-length:
+      - '132'
+    body:
+      encoding: US-ASCII
+      string: ! '{"data":{"url":"https:\/\/fbcdn-profile-a.akamaihd.net\/hprofile-ak-ash4\/211685_1556057983_680746864_q.jpg","is_silhouette":false}}'
+    http_version: '1.1'
+  recorded_at: Fri, 17 May 2013 20:28:25 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/100001307709855/picture?redirect=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Faraday v0.8.7
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      access-control-allow-origin:
+      - ! '*'
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      content-type:
+      - application/json; charset=UTF-8
+      etag:
+      - ! '"dc1425bdb0637a677d0eefc3fdcc7617f500d605"'
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      pragma:
+      - no-cache
+      x-fb-rev:
+      - '818929'
+      x-fb-debug:
+      - e6Q5lM7yEokXM+FY97GDH86xcAFHXwF8irojmO0LTFg=
+      date:
+      - Fri, 17 May 2013 20:28:25 GMT
+      connection:
+      - close
+      content-length:
+      - '136'
+    body:
+      encoding: US-ASCII
+      string: ! '{"data":{"url":"https:\/\/fbcdn-profile-a.akamaihd.net\/hprofile-ak-ash4\/275402_100001307709855_76549500_q.jpg","is_silhouette":false}}'
+    http_version: '1.1'
+  recorded_at: Fri, 17 May 2013 20:28:25 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/100001706068547/picture?redirect=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Faraday v0.8.7
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      access-control-allow-origin:
+      - ! '*'
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      content-type:
+      - application/json; charset=UTF-8
+      etag:
+      - ! '"1592246cc6c4791e9239261c117f8a859ebec21e"'
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      pragma:
+      - no-cache
+      x-fb-rev:
+      - '818929'
+      x-fb-debug:
+      - L33vTNh1uC6MyqE3jPtA2U/pYU5CQLh2y14Y7Jd4oQs=
+      date:
+      - Fri, 17 May 2013 20:28:26 GMT
+      connection:
+      - close
+      content-length:
+      - '135'
+    body:
+      encoding: US-ASCII
+      string: ! '{"data":{"url":"https:\/\/fbcdn-profile-a.akamaihd.net\/hprofile-ak-prn1\/173666_100001706068547_1768079_q.jpg","is_silhouette":false}}'
+    http_version: '1.1'
+  recorded_at: Fri, 17 May 2013 20:28:26 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/1828610633/picture?redirect=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Faraday v0.8.7
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      access-control-allow-origin:
+      - ! '*'
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      content-type:
+      - application/json; charset=UTF-8
+      etag:
+      - ! '"d83e3e4f28a3861cb381d7c168007677f86c09dd"'
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      pragma:
+      - no-cache
+      x-fb-rev:
+      - '818929'
+      x-fb-debug:
+      - MBmUtlfgEHASoW/v499Q4gmne9xpDi7VcaserfRNRMc=
+      date:
+      - Fri, 17 May 2013 20:28:26 GMT
+      connection:
+      - close
+      content-length:
+      - '132'
+    body:
+      encoding: US-ASCII
+      string: ! '{"data":{"url":"https:\/\/fbcdn-profile-a.akamaihd.net\/hprofile-ak-ash3\/173658_1828610633_855468201_q.jpg","is_silhouette":false}}'
+    http_version: '1.1'
+  recorded_at: Fri, 17 May 2013 20:28:26 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/100002473212115/picture?redirect=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Faraday v0.8.7
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      access-control-allow-origin:
+      - ! '*'
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      content-type:
+      - application/json; charset=UTF-8
+      etag:
+      - ! '"c4731a2a3cdd8081a6ecd4e2f97da4b4c73c17ae"'
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      pragma:
+      - no-cache
+      x-fb-rev:
+      - '818929'
+      x-fb-debug:
+      - QF5ngNTzMtUYNJbt9RbBGqidfYV1XrCsxWdljS3+gGY=
+      date:
+      - Fri, 17 May 2013 20:28:26 GMT
+      connection:
+      - close
+      content-length:
+      - '138'
+    body:
+      encoding: US-ASCII
+      string: ! '{"data":{"url":"https:\/\/fbcdn-profile-a.akamaihd.net\/hprofile-ak-snc7\/370284_100002473212115_1780927365_q.jpg","is_silhouette":false}}'
+    http_version: '1.1'
+  recorded_at: Fri, 17 May 2013 20:28:26 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/1828610633/picture?redirect=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Faraday v0.8.7
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      access-control-allow-origin:
+      - ! '*'
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      content-type:
+      - application/json; charset=UTF-8
+      etag:
+      - ! '"d83e3e4f28a3861cb381d7c168007677f86c09dd"'
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      pragma:
+      - no-cache
+      x-fb-rev:
+      - '818929'
+      x-fb-debug:
+      - mwQSVkntKb9owCds9jBRa/X4go1ia+dNrhabXcO6VJE=
+      date:
+      - Fri, 17 May 2013 20:28:27 GMT
+      connection:
+      - close
+      content-length:
+      - '132'
+    body:
+      encoding: US-ASCII
+      string: ! '{"data":{"url":"https:\/\/fbcdn-profile-a.akamaihd.net\/hprofile-ak-ash3\/173658_1828610633_855468201_q.jpg","is_silhouette":false}}'
+    http_version: '1.1'
+  recorded_at: Fri, 17 May 2013 20:28:27 GMT
+recorded_with: VCR 2.4.0
