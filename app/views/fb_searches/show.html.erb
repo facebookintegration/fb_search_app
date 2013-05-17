@@ -11,7 +11,7 @@
         <tr>
           <td class="user">
             <%= image_tag post.author.picture.get, :alt => post.author.name %>
-            <%= post.author.name %>
+            <%= link_to post.author.name, "https://www.facebook.com/#{post.author.id}", :target => "_blank" %>
           </td>
           <td class="post">
             <% if post.message.length <= 150 %>
@@ -34,7 +34,7 @@
         <td class="<%= @other_attr %>"><%= result.other_attr %></td>
         <td class="<%= @fb_search.search_type %>">
           <%= image_tag result.picture.get, :alt => result.name %>
-          <%= result.name %>
+          <%= link_to result.name, "https://www.facebook.com/#{result.id}", :target => "_blank" %>
         </td>
       </tr>
     <% end %>
