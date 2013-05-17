@@ -14,10 +14,10 @@ class Connection
 end
 
 module FacebookApi
-  TYPES = %w(post group event user application page)
+  TYPES = %w(post group event user application page).sort
 
   class FacebookObject
-    attr_reader :id, :name
+    attr_reader :id, :name, :other_attr
 
     def initialize(info)
       @id = info["id"]
@@ -34,7 +34,7 @@ module FacebookApi
 
     def initialize(info)
       super(info)
-      @namespace = info["namespace"]
+      @namespace = @other_attr = info["namespace"]
     end
   end
 
@@ -57,7 +57,7 @@ module FacebookApi
 
     def initialize(info)
       super(info)
-      @version = info["version"]
+      @version = @other_attr = info["version"]
     end
   end
 
@@ -66,7 +66,7 @@ module FacebookApi
 
     def initialize(info)
       super(info)
-      @category = info["category"]
+      @category = @other_attr = info["category"]
     end
   end
 
@@ -91,6 +91,7 @@ module FacebookApi
     def initialize(post)
       super("id" => post["id"], "name" => post["name"])
       @author = Person.new(post["from"])
+      @other_attr = "user"
       @message = post["message"]
       @picture_url = post["picture"]
     end

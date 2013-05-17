@@ -1,10 +1,11 @@
 <h1>Search Results: <%= @fb_search.keywords %></h1>
 <%= link_to "Back to new search", root_path %><br /><br />
 <table>
+  <tr>
+    <th><%= @other_attr ? @other_attr.capitalize : "Error" %></th>
+    <th><%= @type.capitalize %></th>
+  </tr>
   <% if @type === "post" %>
-    <tr>
-      <th>User</th><th>Post</th>
-    </tr>
     <% @results.each do |post| %>
       <% if post.message %>
         <tr>
@@ -27,47 +28,17 @@
         </tr>
       <% end %>
     <% end %>
-  <% elsif @type === "group" %>
-    <tr>
-      <th>Group</th>
-    </tr>
-    <% @results.each do |group| %>
+  <% elsif @type === "group" || @type === "application" || @type === "page" %>
+    <% @results.each do |result| %>
       <tr>
-        <td class="group">
-          <%= image_tag group.picture.get, :alt => group.name %>
-          <%= group.name %>
-        </td>
-      </tr>
-    <% end %>
-  <% elsif @type === "page" %>
-    <tr>
-      <th>Category</th>
-      <th>Page</th>
-    </tr>
-    <% @results.each do |page| %>
-      <tr>
-        <td><%= page.category %></td>
-        <td class="page">
-          <%= image_tag page.picture.get, :alt => page.name %>
-          <%= page.name %>
-        </td>
-      </tr>
-    <% end %>
-  <% elsif @type === "application" %>
-    <tr>
-      <th>Namespace</th>
-      <th>Application</th>
-    </tr>
-    <% @results.each do |app| %>
-      <tr>
-        <td><%= app.namespace %></td>
-        <td class="app">
-          <%= image_tag app.picture.get, :alt => app.name %>
-          <%= app.name %>
+        <td class="<%= @other_attr %>"><%= result.other_attr %></td>
+        <td class="<%= @type %>">
+          <%= image_tag result.picture.get, :alt => result.name %>
+          <%= result.name %>
         </td>
       </tr>
     <% end %>
   <% else %>
-    <p>Login required to perform this search!</p>
+    <tr><td>Login required to perform this search!</td><td>&nbsp;</td></tr>
   <% end %>
 </table>

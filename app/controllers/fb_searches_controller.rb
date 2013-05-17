@@ -19,6 +19,7 @@ class FbSearchesController < ApplicationController
     @fb_search = FbSearch.find(params[:id])
     @type = flash[:type]
     flash[:type] = @type
+    @other_attr = other_attr(@type)
     search = FacebookApi::Search.new.data(@fb_search.keywords, @type)
     @results = create_type_objs(search, @type)
   end
@@ -49,6 +50,21 @@ class FbSearchesController < ApplicationController
         search.map { |data| FacebookApi::Group.new(data) }
       else
         search.map { |data| FacebookApi::Page.new(data) }
+      end
+    end
+
+    def other_attr(type)
+      case type
+      when "post"
+        "user"
+      when "user"
+      when "event"
+      when "application"
+        "namespace"
+      when "group"
+        "version"
+      else
+        "category"
       end
     end
 end
