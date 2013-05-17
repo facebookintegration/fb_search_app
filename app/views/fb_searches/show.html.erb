@@ -3,9 +3,9 @@
 <table>
   <tr>
     <th><%= @other_attr ? @other_attr.capitalize : "Error" %></th>
-    <th><%= @type.capitalize %></th>
+    <th><%= @fb_search.type.capitalize %></th>
   </tr>
-  <% if @type === "post" %>
+  <% if @fb_search.type === "post" %>
     <% @results.each do |post| %>
       <% if post.message %>
         <tr>
@@ -28,11 +28,11 @@
         </tr>
       <% end %>
     <% end %>
-  <% elsif @type === "group" || @type === "application" || @type === "page" %>
+  <% elsif @fb_search.type === "group" || @fb_search.type === "application" || @fb_search.type === "page" %>
     <% @results.each do |result| %>
       <tr>
         <td class="<%= @other_attr %>"><%= result.other_attr %></td>
-        <td class="<%= @type %>">
+        <td class="<%= @fb_search.type %>">
           <%= image_tag result.picture.get, :alt => result.name %>
           <%= result.name %>
         </td>

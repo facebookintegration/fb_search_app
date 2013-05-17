@@ -1,14 +1,10 @@
 <h1>Recent Searches</h1>
 <%= link_to 'Back to new search', new_fb_search_path %><br />
-<%= form_tag do %>
-  <%= label_tag :type, "Click a search to repeat for: " %>
-  <%= select :type, "option", FacebookApi::TYPES %>
-<% end %>
 <ul>
   <% @fb_searches.each do |search| %>
     <li>
     <%= link_to search.keywords, fb_search_path(search), :class => "search" %>
-    (<%= search.frequency %>)
+    (<%= search.frequency %>, <%= search.type %>)
     <%= link_to 'remove', search, :method => :delete, :confirm => "Delete search from history?" %>
     </li>
   <% end %>

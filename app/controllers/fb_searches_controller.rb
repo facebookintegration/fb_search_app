@@ -4,9 +4,8 @@ class FbSearchesController < ApplicationController
   end
 
   def create
-    @fb_search = FbSearch.find_or_create_by_keywords(params[:fb_search][:keywords])
+    @fb_search = FbSearch.find_or_create_by_keywords_and_type(params[:fb_search][:keywords], params[:fb_search][:type])
     @fb_search.keywords = @fb_search.keywords.strip || @fb_search.keywords
-    flash[:type] = params[:type][:option]
     if @fb_search.keywords != "" || @fb_search.save
       @fb_search.increment!(:frequency)
       redirect_to fb_search_path(@fb_search)
@@ -17,11 +16,9 @@ class FbSearchesController < ApplicationController
 
   def show
     @fb_search = FbSearch.find(params[:id])
-    @type = flash[:type]
-    flash[:type] = @type
-    @other_attr = other_attr(@type)
-    search = FacebookApi::Search.new.data(@fb_search.keywords, @type)
-    @results = create_type_objs(search, @type)
+    @other_attr = other_attr(@fb_search.type)
+    search = FacebookApi::Search.new.data(@fb_search.keywords, @fb_search.type)
+    @results = create_type_objs(search, @fb_search.type)
   end
 
   def index
