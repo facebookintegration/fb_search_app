@@ -3,11 +3,9 @@
 <%= form_for(@fb_search) do |f| %>
   <%= f.label :keywords %><br />
   <% if @fb_search.errors.any? %>
-    <ul>
-      <% @fb_search.errors.full_messages.each do |msg| %>
-        <li class="error"><%= msg %></li>
-      <% end %>
-    </ul>
+    <% @fb_search.errors.full_messages.each do |msg| %>
+      <span class="error"><%= msg %></span><br />
+    <% end %>
   <% end %>
   <%= f.text_field :keywords %><br />
   <%= f.label :search_type, "Type" %><br />
