@@ -1,29 +1,73 @@
 <h1>Search Results: <%= @fb_search.keywords %></h1>
 <%= link_to "Back to new search", root_path %><br /><br />
 <table>
-  <tr>
-    <th>User</th><th>Post</th>
-  </tr>
-  <% @posts.each do |post| %>
-    <% if post.message %>
+  <% if @type === "post" %>
+    <tr>
+      <th>User</th><th>Post</th>
+    </tr>
+    <% @results.each do |post| %>
+      <% if post.message %>
+        <tr>
+          <td class="user">
+            <%= image_tag post.author.picture.get, :alt => post.author.name %>
+            <%= post.author.name %>
+          </td>
+          <td class="post">
+            <% if post.message.length <= 150 %>
+              <%= post.message %>
+            <% else %>
+              <%= post.message[0...150] %>...
+              <%= link_to "read more", "", :class => "show_modal" %>
+              <div class="modal"><%= post.message %></div>
+            <% end %>
+            <% if post.picture %>
+              <%= image_tag post.picture.get, :alt => "Photo for " << (post.name || "post") %>
+            <% end %>
+          </td>
+        </tr>
+      <% end %>
+    <% end %>
+  <% elsif @type === "group" %>
+    <tr>
+      <th>Group</th>
+    </tr>
+    <% @results.each do |group| %>
       <tr>
-        <td class="user">
-          <%= image_tag post.author.picture.get, :alt => post.author.name %>
-          <%= post.author.name %>
-        </td>
-        <td class="post">
-          <% if post.message.length <= 150 %>
-            <%= post.message %>
-          <% else %>
-            <%= post.message[0...150] %>...
-            <%= link_to "read more", "", :class => "show_modal" %>
-            <div class="modal"><%= post.message %></div>
-          <% end %>
-          <% if post.picture %>
-            <%= image_tag post.picture.get, :alt => "Photo for " << (post.name || "post") %>
-          <% end %>
+        <td class="group">
+          <%= image_tag group.picture.get, :alt => group.name %>
+          <%= group.name %>
         </td>
       </tr>
     <% end %>
+  <% elsif @type === "page" %>
+    <tr>
+      <th>Category</th>
+      <th>Page</th>
+    </tr>
+    <% @results.each do |page| %>
+      <tr>
+        <td><%= page.category %></td>
+        <td class="page">
+          <%= image_tag page.picture.get, :alt => page.name %>
+          <%= page.name %>
+        </td>
+      </tr>
+    <% end %>
+  <% elsif @type === "application" %>
+    <tr>
+      <th>Namespace</th>
+      <th>Application</th>
+    </tr>
+    <% @results.each do |app| %>
+      <tr>
+        <td><%= app.namespace %></td>
+        <td class="app">
+          <%= image_tag app.picture.get, :alt => app.name %>
+          <%= app.name %>
+        </td>
+      </tr>
+    <% end %>
+  <% else %>
+    <p>Login required to perform this search!</p>
   <% end %>
 </table>

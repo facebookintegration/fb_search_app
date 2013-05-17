@@ -18,7 +18,6 @@ ActiveRecord::Schema.define(:version => 20130515202450) do
     t.datetime "created_at",                :null => false
     t.datetime "updated_at",                :null => false
     t.integer  "frequency",  :default => 0
-    t.string   "type"
   end
 
 end

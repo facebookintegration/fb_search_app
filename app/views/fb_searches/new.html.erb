@@ -10,6 +10,8 @@
     </ul>
   <% end %>
   <%= f.text_field :keywords %><br />
+  <%= label :type, "Type" %><br />
+  <%= select :type, "option", FacebookApi::TYPES %><br />
 
   <%= f.submit "Search" %>
 <% end %>
