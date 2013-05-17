@@ -1,6 +1,0 @@
-<% output = post["message"].split(@fb_search.keywords) %>
-<% output.drop(output.length - 1).each do |chunk| %>
-  <%= chunk %>
-  <b><%= @fb_search.keywords if output.length > 1 %></b>
-<% end %>
-<%= output.last if output.length > 1 %>

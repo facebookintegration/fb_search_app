@@ -30,6 +30,12 @@ group :test, :development do
   gem 'rb-fsevent'
 end
 
+group :test do
+  gem 'simplecov', :require => false
+end
+
+
+
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
