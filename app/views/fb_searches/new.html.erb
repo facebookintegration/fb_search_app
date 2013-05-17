@@ -1,4 +1,4 @@
-<h1>FB Post Search</h1>
+<h1>Facebook Search</h1>
 <%= link_to "View recent searches", fb_searches_path %><br /><br />
 <%= form_for(@fb_search) do |f| %>
   <%= f.label :keywords %><br />
@@ -10,8 +10,8 @@
     </ul>
   <% end %>
   <%= f.text_field :keywords %><br />
-  <%= label :type, "Type" %><br />
-  <%= select :type, "option", FacebookApi::TYPES %><br />
+  <%= f.label :search_type, "Type" %><br />
+  <%= f.select :search_type, FacebookApi::TYPES %><br />
 
   <%= f.submit "Search" %>
 <% end %>

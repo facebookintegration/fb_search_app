@@ -4,7 +4,7 @@
   <% @fb_searches.each do |search| %>
     <li>
     <%= link_to search.keywords, fb_search_path(search), :class => "search" %>
-    (<%= search.frequency %>, <%= search.type %>)
+    (<%= search.frequency %>, <%= search.search_type %>)
     <%= link_to 'remove', search, :method => :delete, :confirm => "Delete search from history?" %>
     </li>
   <% end %>

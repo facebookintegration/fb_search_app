@@ -4,7 +4,7 @@ class FbSearchesController < ApplicationController
   end
 
   def create
-    @fb_search = FbSearch.find_or_create_by_keywords_and_type(params[:fb_search][:keywords], params[:fb_search][:type])
+    @fb_search = FbSearch.find_or_create_by_keywords_and_search_type(params[:fb_search])
     @fb_search.keywords = @fb_search.keywords.strip || @fb_search.keywords
     if @fb_search.keywords != "" || @fb_search.save
       @fb_search.increment!(:frequency)
@@ -16,14 +16,13 @@ class FbSearchesController < ApplicationController
 
   def show
     @fb_search = FbSearch.find(params[:id])
-    @other_attr = other_attr(@fb_search.type)
-    search = FacebookApi::Search.new.data(@fb_search.keywords, @fb_search.type)
-    @results = create_type_objs(search, @fb_search.type)
+    @other_attr = other_attr(@fb_search.search_type)
+    search = FacebookApi::Search.new.data(@fb_search.keywords, @fb_search.search_type)
+    @results = create_type_objs(search, @fb_search.search_type)
   end
 
   def index
     @fb_searches = FbSearch.order("frequency DESC").all
-    flash[:type] = "post"
   end
 
   def destroy
