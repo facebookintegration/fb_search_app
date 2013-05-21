@@ -26,14 +26,15 @@ end
 group :test, :development do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
+  gem 'guard-rspec'
 end
 
 group :test do
   gem 'simplecov', :require => false
   gem 'vcr'
   gem 'faker'
-  gem 'guard-rspec'
   gem 'rb-fsevent'
+  gem 'growl'
   gem 'launchy'
   gem 'capybara'
   gem 'fakeweb'

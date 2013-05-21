@@ -1,5 +1,5 @@
 FbSearchApp::Application.routes.draw do
-  resources :fb_searches
+  resources :fb_searches, :except => [:edit, :update]
 
   root :to => "FbSearches#new"
   # The priority is based upon order of creation:

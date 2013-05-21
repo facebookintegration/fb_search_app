@@ -24,7 +24,7 @@ module FacebookApi
       @name = info["name"]
     end
 
-    def picture(options = {})
+    def picture
       Picture.new("id" => @id, "name" => "Picture for " << (@name || "post"))
     end
   end
