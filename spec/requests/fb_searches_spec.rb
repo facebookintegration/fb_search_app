@@ -1,7 +1,11 @@
 require 'spec_helper'
 
 describe "FbSearches" do
-  before { @search = FactoryGirl.create(:fb_search, :keywords => "llama", :search_type => "post") }
+  before do
+    @search_post = FactoryGirl.create(:fb_search, :keywords => "llama", :search_type => "post")
+    @search_group = FactoryGirl.create(:fb_search, :keywords => "llama", :search_type => "group")
+    @search_page = FactoryGirl.create(:fb_search, :keywords => "llama", :search_type => "page")
+  end
 
   describe "going to home page" do
     before { visit root_path }
@@ -27,17 +31,6 @@ describe "FbSearches" do
         page.should have_selector('h1', :content => 'Facebook Search')
       end
 
-      it "should increment frequency of a repeated search" do
-        VCR.use_cassette('Cassette1') do
-          fill_in :keywords, :with => @search.keywords
-          click_button "Search"
-          freq = @search.frequency
-          visit root_path
-          fill_in :keywords, :with => @search.keywords
-          expect { @search.frequency.to eql(freq + 1) }
-        end
-      end
-
       it "should accept a valid search" do
         VCR.use_cassette('Cassette4') do
           fill_in :keywords, :with => "squirrels"
@@ -49,11 +42,17 @@ describe "FbSearches" do
   end
 
   describe "going to search results page" do
-
     it "should have the correct links" do
       VCR.use_cassette('Cassette2') do
-        visit fb_search_path(@search)
+        visit fb_search_path(@search_page)
         page.should have_link('Back to new search', :href => root_path)
+      end
+    end
+
+    it "should render the group results correctly" do
+      VCR.use_cassette('Cassette7') do
+        visit fb_search_path(@search_group)
+        page.should have_content('Group')
       end
     end
   end
@@ -62,7 +61,7 @@ describe "FbSearches" do
     before { visit fb_searches_path }
 
     it "should have a list of links to recent searches" do
-      page.should have_link('llama', :href => fb_search_path(@search));
+      page.should have_link('llama', :href => fb_search_path(@search_post));
     end
 
     it "should have the correct heading" do
@@ -74,7 +73,7 @@ describe "FbSearches" do
     end
 
     it "should provide a working delete link" do
-      page.should have_link('remove', :href => fb_search_path(@search))
+      page.should have_link('remove', :href => fb_search_path(@search_post))
       expect { click_link 'remove' }.to change(FbSearch, :count).by(-1)
       current_path.should == fb_searches_path
     end

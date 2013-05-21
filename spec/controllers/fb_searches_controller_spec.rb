@@ -34,15 +34,8 @@ describe FbSearchesController do
     end
 
     context "with a repeated search" do
-      before { @search = FactoryGirl.create(:fb_search, :keywords => 'dinosaur') }
-
-      it "increments the frequency of the search" do
-        freq = @search.frequency
-        post :create, :fb_search => FactoryGirl.attributes_for(:fb_search, :keywords => @search.keywords, :search_type => @search.search_type)
-        @search.frequency.should eq(freq + 1)
-      end
-
       it "does not add a new entry to the database" do
+        @search = FactoryGirl.create(:fb_search, :keywords => 'dinosaur')
         expect { post :create, :fb_search => FactoryGirl.attributes_for(:fb_search, :keywords => 'dinosaur') }.to_not change(FbSearch, :count)
       end
     end
