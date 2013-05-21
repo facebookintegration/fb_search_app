@@ -11,7 +11,8 @@
         <tr>
           <td class="user">
             <%= image_tag post.author.picture.get, :alt => post.author.name %>
-            <%= link_to post.author.name, "https://www.facebook.com/#{post.author.id}", :target => "_blank" %>
+            <%= link_to post.author.name, "https://www.facebook.com/#{post.author.id}", :target => "_blank" %><br />
+            <span class="time"><%= time_ago_in_words(post.created_time) %> ago</span>
           </td>
           <td class="post">
             <% if post.message.length <= 150 %>

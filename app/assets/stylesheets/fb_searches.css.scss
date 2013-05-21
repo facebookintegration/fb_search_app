@@ -22,11 +22,16 @@ table {
       float: left;
       margin-right: 1em;
     }
+    span.time {
+      font-size: 0.75em;
+      color: gray;
+    }
   }
   td.post {
     img {
       float: right;
       margin: 1em;
+      clear: both;
     }
   }
   .modal {

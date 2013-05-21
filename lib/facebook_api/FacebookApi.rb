@@ -86,7 +86,7 @@ module FacebookApi
   end
 
   class Post < FacebookObject
-    attr_reader :author, :message
+    attr_reader :author, :message, :created_time
 
     def initialize(post)
       super("id" => post["id"], "name" => post["name"])
@@ -94,6 +94,7 @@ module FacebookApi
       @other_attr = "user"
       @message = post["message"]
       @picture_url = post["picture"]
+      @created_time = post["created_time"]
     end
 
     def picture
