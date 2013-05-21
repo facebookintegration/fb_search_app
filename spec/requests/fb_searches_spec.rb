@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe "FbSearches" do
-  before { @search = FbSearch.create(:keywords => "llama", :search_type => "post") }
+  before { @search = FactoryGirl.create(:fb_search, :keywords => "llama", :search_type => "post") }
 
   describe "going to home page" do
     before { visit root_path }
@@ -25,14 +25,6 @@ describe "FbSearches" do
         fill_in :keywords, :with => ""
         expect { click_button "Search" }.not_to change(FbSearch, :count)
         page.should have_selector('h1', :content => 'Facebook Search')
-      end
-
-      it "should not add a repeated search to the database" do
-        VCR.use_cassette('Cassette3') do
-          fill_in :keywords, :with => @search.keywords
-          expect { click_button "Search" }.not_to change(FbSearch, :count)
-          current_path.should == fb_search_path(@search)
-        end
       end
 
       it "should increment frequency of a repeated search" do

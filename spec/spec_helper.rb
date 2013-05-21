@@ -1,4 +1,5 @@
 require 'vcr_setup'
+require 'capybara/rspec'
 
 require 'simplecov'
 SimpleCov.start "rails"
