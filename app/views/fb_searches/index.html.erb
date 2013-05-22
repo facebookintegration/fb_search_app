@@ -1,15 +1,17 @@
 <h1>Recent Searches</h1>
-<%= link_to 'Back to new search', new_fb_search_path %><br />
+<%= link_to 'Back to new search', new_fb_search_path %><br /><br />
 <table>
   <tr>
     <th>Keywords</th>
+    <th>Search made...</th>
     <th>Frequency</th>
     <th>Type</th>
     <th>Delete</th>
   </tr>
   <% @fb_searches.each do |search| %>
     <tr>
-      <td><%= link_to search.keywords, fb_search_path(search), :class => "search" %></td>
+      <td><%= link_to search.keywords, fb_search_path(search), :class => "search" %> </td>
+      <td><%= timeago_tag search.updated_at %></td>
       <td><%= search.frequency %></td>
       <td><%= search.search_type %></td>
       <td><%= link_to 'remove', search, :method => :delete, :confirm => "Delete search from history?" %></td>

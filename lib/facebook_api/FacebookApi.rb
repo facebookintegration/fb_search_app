@@ -25,7 +25,7 @@ module FacebookApi
     end
 
     def picture
-      Picture.new("id" => @id, "name" => "Picture for " << (@name || "post"))
+      Picture.new("id" => @id, "name" => "Picture for #{@name || 'post'}")
     end
   end
 
@@ -98,7 +98,7 @@ module FacebookApi
     end
 
     def picture
-      @picture_url ? PostPicture.new("id" => @id, "name" => "Picture for " << (@name || "post"), "url" => @picture_url) : nil
+      @picture_url ? PostPicture.new("id" => @id, "name" => "Picture for #{@name || 'post'}", "url" => @picture_url) : nil
     end
   end
 

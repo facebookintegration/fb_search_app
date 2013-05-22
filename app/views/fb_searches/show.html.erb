@@ -12,7 +12,7 @@
           <td class="user">
             <%= image_tag post.author.picture.get, :alt => post.author.name %>
             <%= link_to post.author.name, "https://www.facebook.com/#{post.author.id}", :target => "_blank" %><br />
-            <%= timeago_tag Time.parse(post.created_time), :nojs => true, :class => "time" %>
+            <%= timeago_tag Time.parse(post.created_time) %>
           </td>
           <td class="post">
             <% if post.message.length <= 150 %>
