@@ -4,6 +4,7 @@ gem 'rails', '3.2.13'
 gem 'faraday'
 gem 'faraday_middleware'
 gem 'hashie'
+gem 'rails-timeago'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
