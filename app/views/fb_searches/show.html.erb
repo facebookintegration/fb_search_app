@@ -23,8 +23,9 @@
               <div class="modal"><%= post.message %></div>
             <% end %>
             <% if post.picture %>
-              <%= image_tag post.picture.get, :alt => "Photo for " << (post.name || "post") %>
+              <%= image_tag post.picture.get, :alt => "Photo for #{post.name || 'post'}" %>
             <% end %>
+            <%= link_to "View on Facebook...", "https://www.facebook.com/#{post.id}", :target => "_blank", :class => "external" %>
           </td>
         </tr>
       <% end %>

@@ -25,12 +25,19 @@ table {
     span.time {
       font-size: 0.75em;
       color: gray;
+      margin-top: 1em;
     }
   }
   td.post {
     img {
       float: right;
       margin: 1em;
+      clear: both;
+    }
+    a.external {
+      font-size: 0.75em;
+      float: right;
+      margin-top: 1em;
       clear: both;
     }
   }
